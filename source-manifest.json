@@ -1,0 +1,40 @@
+{
+  "mk33_version": "1.3.3.0",
+  "mk33_commit": "fff40f9f602b72f5bad2f7ec888985886d163f98",
+  "freeiva_release": "0.2.20.2",
+  "ksp_target": "1.12.5",
+  "files": {
+    "WildBlueIndustries/Mk-33/Parts/SharedAssets/cockpitIVA.mu": {
+      "sha256": "c779c8bc95f9a4e1733a7474615b829ff57edc8399a3151ec9786ae86f0392ec",
+      "bytes": 2339472
+    },
+    "WildBlueIndustries/Mk-33/Parts/SharedAssets/crewModuleIVA.mu": {
+      "sha256": "6e98c17c17a15431d5a26ff907825961b335c8fe8992fa33349d4c0a0b446b8c",
+      "bytes": 2138249
+    },
+    "WildBlueIndustries/Mk-33/Parts/SharedAssets/mk33AirlockSpace.mu": {
+      "sha256": "944d55fd38e4c86dc4721605d28e3fb46b57e9ced6becf8e2239d686c83458b7",
+      "bytes": 683607
+    },
+    "WildBlueIndustries/Mk-33/Parts/SharedAssets/controlCabIVA.mu": {
+      "sha256": "7f39bfd341cfe34199abbfc6748c927ac233635e58843d02ad5581da7e32dfc5",
+      "bytes": 399172
+    },
+    "WildBlueIndustries/Mk-33/Parts/SharedAssets/cockpitDepthMask.mu": {
+      "sha256": "00ab329e4448dd626b68f9747e122b1cb434bb2a708d179393e06847e737ffda",
+      "bytes": 76100
+    },
+    "WildBlueIndustries/Mk-33/Parts/SharedAssets/crewModuleDepthMask.mu": {
+      "sha256": "fabcc8a75075acd8bf343c4707173e576a9e6f41196cd6e5c531e01eec1585d6",
+      "bytes": 66770
+    },
+    "WildBlueIndustries/Mk-33/Parts/SharedAssets/airlockDepthMask.mu": {
+      "sha256": "556b668712e2fc4a3e6f38cfb370660146e159a1c7959eb0b6070de3e1690f85",
+      "bytes": 78116
+    },
+    "WildBlueIndustries/Mk-33/Parts/SharedAssets/controlCabDepthmask.mu": {
+      "sha256": "91cf31bbf9d281849cd81bd10d189f16ed51eac8a3b9d5d0e2ebd696f90ebf7f",
+      "bytes": 11342
+    }
+  }
+}

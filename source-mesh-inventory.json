@@ -1,0 +1,310 @@
+{
+  "cockpitIVA": [
+    {
+      "name": "canopy",
+      "vertices": 1838,
+      "triangles": 1722,
+      "original_collider": false
+    },
+    {
+      "name": "crewDoor",
+      "vertices": 614,
+      "triangles": 520,
+      "original_collider": false
+    },
+    {
+      "name": "crewTube",
+      "vertices": 5390,
+      "triangles": 4452,
+      "original_collider": false
+    },
+    {
+      "name": "Dashboard",
+      "vertices": 8324,
+      "triangles": 6194,
+      "original_collider": false
+    },
+    {
+      "name": "Screens",
+      "vertices": 88,
+      "triangles": 44,
+      "original_collider": false
+    },
+    {
+      "name": "Seat001",
+      "vertices": 1528,
+      "triangles": 1244,
+      "original_collider": false
+    },
+    {
+      "name": "Seat002",
+      "vertices": 1504,
+      "triangles": 1244,
+      "original_collider": false
+    },
+    {
+      "name": "Seat003",
+      "vertices": 668,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat004",
+      "vertices": 668,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat005",
+      "vertices": 668,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat006",
+      "vertices": 668,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat007",
+      "vertices": 668,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat008",
+      "vertices": 668,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat009",
+      "vertices": 668,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat010",
+      "vertices": 668,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat011",
+      "vertices": 668,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat012",
+      "vertices": 668,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "seatbelts",
+      "vertices": 9328,
+      "triangles": 3804,
+      "original_collider": false
+    },
+    {
+      "name": "windows",
+      "vertices": 250,
+      "triangles": 240,
+      "original_collider": false
+    }
+  ],
+  "crewModuleIVA": [
+    {
+      "name": "cabinMesh",
+      "vertices": 1852,
+      "triangles": 1394,
+      "original_collider": false
+    },
+    {
+      "name": "crewDoor",
+      "vertices": 621,
+      "triangles": 520,
+      "original_collider": false
+    },
+    {
+      "name": "crewTube",
+      "vertices": 7511,
+      "triangles": 6260,
+      "original_collider": false
+    },
+    {
+      "name": "Screen",
+      "vertices": 4,
+      "triangles": 2,
+      "original_collider": false
+    },
+    {
+      "name": "Screen001",
+      "vertices": 4,
+      "triangles": 2,
+      "original_collider": false
+    },
+    {
+      "name": "Screen002",
+      "vertices": 4,
+      "triangles": 2,
+      "original_collider": false
+    },
+    {
+      "name": "Seat001",
+      "vertices": 668,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat002",
+      "vertices": 661,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat003",
+      "vertices": 661,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat004",
+      "vertices": 661,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat005",
+      "vertices": 661,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat006",
+      "vertices": 661,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat007",
+      "vertices": 661,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat008",
+      "vertices": 661,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat009",
+      "vertices": 661,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat010",
+      "vertices": 661,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat011",
+      "vertices": 661,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat012",
+      "vertices": 661,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat013",
+      "vertices": 661,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat014",
+      "vertices": 661,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat015",
+      "vertices": 661,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "Seat016",
+      "vertices": 661,
+      "triangles": 542,
+      "original_collider": false
+    },
+    {
+      "name": "straps",
+      "vertices": 12448,
+      "triangles": 5072,
+      "original_collider": false
+    },
+    {
+      "name": "windows",
+      "vertices": 128,
+      "triangles": 120,
+      "original_collider": false
+    }
+  ],
+  "mk33AirlockSpace": [
+    {
+      "name": "airlockIVAMesh",
+      "vertices": 7002,
+      "triangles": 6412,
+      "original_collider": false
+    },
+    {
+      "name": "Seat1",
+      "vertices": 1378,
+      "triangles": 828,
+      "original_collider": false
+    },
+    {
+      "name": "Seat2",
+      "vertices": 1378,
+      "triangles": 828,
+      "original_collider": false
+    }
+  ],
+  "controlCabIVA": [
+    {
+      "name": "cabIVAMesh",
+      "vertices": 76,
+      "triangles": 40,
+      "original_collider": false
+    },
+    {
+      "name": "ladder",
+      "vertices": 4394,
+      "triangles": 3616,
+      "original_collider": false
+    },
+    {
+      "name": "Seat001",
+      "vertices": 1528,
+      "triangles": 1244,
+      "original_collider": false
+    },
+    {
+      "name": "windows",
+      "vertices": 24,
+      "triangles": 12,
+      "original_collider": false
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "in_game_tested": false,
+  "CockpitCorridor": {
+    "actual_mu_matches_generated_geometry_json": true,
+    "layer": 16,
+    "convex": false,
+    "isTrigger": false,
+    "vertex_count": 99,
+    "triangle_count": 132
+  },
+  "KrewAirlockBridge": {
+    "actual_mu_matches_generated_geometry_json": true,
+    "layer": 16,
+    "convex": false,
+    "isTrigger": false,
+    "vertex_count": 64,
+    "triangle_count": 64
+  },
+  "CircularHatch": {
+    "closed_door_convex_collider": true,
+    "door_layer": 16,
+    "handle_layers": [
+      20,
+      20
+    ],
+    "all_128_faces_outward": true
+  },
+  "KrewDockTube": {
+    "unique_named_tube": true,
+    "inward_faces": true,
+    "layer": 16
+  },
+  "InteractionPoints": {
+    "no_embedded_physical_colliders": true
+  }
+}

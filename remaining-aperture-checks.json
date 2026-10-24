@@ -1,0 +1,57 @@
+{
+  "in_game_tested": false,
+  "native_meshcutter_executed": false,
+  "method": "independent convex triangle subtraction, radius .20/height .60 upright capsule sampled every <=.01m; .01m allowance for segment and pose sampling; fixed source meshes including seats. This is not Unity collision cooking or locomotion.",
+  "cases": {
+    "airlock": {
+      "front_and_rear": {
+        "samples": 281,
+        "clearance_lower_bound_m": 0.1704570161557733,
+        "nearest_mesh": "airlockIVAMesh",
+        "worst_center": [
+          0,
+          0,
+          -0.5599999999999999
+        ],
+        "clear": true
+      },
+      "roof": {
+        "samples": 101,
+        "clearance_lower_bound_m": 0.31248076358779403,
+        "nearest_mesh": "airlockIVAMesh",
+        "worst_center": [
+          0,
+          1.13,
+          0
+        ],
+        "clear": true
+      }
+    },
+    "krew_roof": {
+      "roof": {
+        "samples": 226,
+        "clearance_lower_bound_m": 0.1173020298930418,
+        "nearest_mesh": "cabinMesh",
+        "worst_center": [
+          1.11893,
+          -0.1,
+          0.76054
+        ],
+        "clear": true
+      }
+    },
+    "control_cab_roof": {
+      "roof": {
+        "samples": 136,
+        "clearance_lower_bound_m": 0.09202912034123202,
+        "nearest_mesh": "Seat001",
+        "worst_center": [
+          0,
+          0.6,
+          0.17
+        ],
+        "clear": true
+      }
+    }
+  }
+}

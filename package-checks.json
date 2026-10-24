@@ -1,0 +1,20 @@
+{
+  "in_game_tested": false,
+  "modulemanager_executed": false,
+  "four_internal_patch_blocks": true,
+  "post_cut_load_order": true,
+  "no_fixed_door_copy": true,
+  "no_later_visual_cut": true,
+  "no_original_seat_removal": true,
+  "part_stat_edits_absent": true,
+  "local_model_references_resolve": true,
+  "unique_models": [
+    "Mk33FreeIVA/Models/CircularHatch",
+    "Mk33FreeIVA/Models/CockpitCorridor",
+    "Mk33FreeIVA/Models/InteractionPoints",
+    "Mk33FreeIVA/Models/KrewAirlockBridge",
+    "Mk33FreeIVA/Models/KrewDockTube"
+  ],
+  "only_own_runtime_dll": true,
+  "source_hash_mismatches": []
+}

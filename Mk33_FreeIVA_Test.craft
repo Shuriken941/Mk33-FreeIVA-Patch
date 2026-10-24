@@ -1,0 +1,415 @@
+ship = Mk33 FreeIVA Static Test
+version = 1.12.5
+description = Unrun static FreeIVA test rig. Seat two crew in cockpit. Do not stage the clamps. See Mk33FreeIVA/Tests/instructions.md.
+type = SPH
+size = 9,8,17
+steamPublishedFileId = 0
+persistentId = 33330000
+rot = 0,0,0,1
+missionFlag = Squad/Flags/default
+vesselType = Ship
+OverrideDefault = False,False,False,False
+OverrideActionControl = 0,0,0,0
+OverrideAxisControl = 0,0,0,0
+OverrideGroupNames = ,,,
+PART
+{
+	part = Mk33Cockpit_330001
+	partName = Part
+	persistentId = 330001
+	pos = 0,5,0
+	attPos = 0,0,0
+	attPos0 = 0,5,0
+	rot = 0.707106781,0,0,0.707106781
+	attRot = 0,0,0,1
+	attRot0 = 0.707106781,0,0,0.707106781
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = Mk33MidTank_330002
+	attN = bottom,Mk33MidTank_330002_0|-2.70157|0_0|-1|0_0|-2.70157|0_0|-1|0
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 0
+		maxAmount = 7785
+		flowState = True
+		isTweakable = True
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 0
+		maxAmount = 9515
+		flowState = True
+		isTweakable = True
+	}
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = Mk33MidTank_330002
+	partName = Part
+	persistentId = 330002
+	pos = 0,5,-7.70157
+	attPos = 0,0,0
+	attPos0 = 0,-7.70157,0
+	rot = 0.707106781,0,0,0.707106781
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = wbiMk33KrewModule_330003
+	link = launchClamp1_330005
+	link = launchClamp1_330006
+	link = launchClamp1_330007
+	link = launchClamp1_330008
+	attN = top,Mk33Cockpit_330001_0|5|0_0|1|0_0|5|0_0|1|0
+	attN = MissionModuleNode1,wbiMk33KrewModule_330003_0|3.75|1.69861_0|0|-1_0|3.75|1.69861_0|0|-1
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 0
+		maxAmount = 18495
+		flowState = True
+		isTweakable = True
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 0
+		maxAmount = 22605
+		flowState = True
+		isTweakable = True
+	}
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = wbiMk33KrewModule_330003
+	partName = Part
+	persistentId = 330003
+	pos = 0,5.00207,-3.95157
+	attPos = 0,0,0
+	attPos0 = 0,3.75,-0.00207
+	rot = 0.707106781,0,0,0.707106781
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = wbiMk33Airlock_330004
+	attN = mount,Mk33MidTank_330002_0|0|1.70068_0|0|1_0|0|1.70068_0|0|1
+	attN = bottom,wbiMk33Airlock_330004_0|-1.25008|0_0|-1|0_0|-1.25008|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = wbiMk33Airlock_330004
+	partName = Part
+	persistentId = 330004
+	pos = 0,5.00207,-6.45061
+	attPos = 0,0,0
+	attPos0 = 0,-2.49904,0
+	rot = 0.707106781,0,0,0.707106781
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,wbiMk33KrewModule_330003_0|1.24896|0_0|1|0_0|1.24896|0_0|1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = launchClamp1_330005
+	partName = Part
+	persistentId = 330005
+	pos = -2.7,4.5,-4
+	attPos = 0,0,0
+	attPos0 = -2.7,3.70157,0.5
+	rot = 0,0.707106781,0,0.707106781
+	attRot = 0,0,0,1
+	attRot0 = -0.5,0.5,-0.5,0.5
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,Mk33MidTank_330002
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 1
+		height = 4.5
+		stagingEnabled = True
+		towerRot = 0,-0.707106781,0,0.707106781
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = True
+		throttle = 1
+	}
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = launchClamp1_330006
+	partName = Part
+	persistentId = 330006
+	pos = 2.7,4.5,-4
+	attPos = 0,0,0
+	attPos0 = 2.7,3.70157,0.5
+	rot = 0,-0.707106781,0,0.707106781
+	attRot = 0,0,0,1
+	attRot0 = -0.5,-0.5,0.5,0.5
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,Mk33MidTank_330002
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 1
+		height = 4.5
+		stagingEnabled = True
+		towerRot = 0,0.707106781,0,0.707106781
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = True
+		throttle = 1
+	}
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = launchClamp1_330007
+	partName = Part
+	persistentId = 330007
+	pos = -2.7,4.5,-10
+	attPos = 0,0,0
+	attPos0 = -2.7,-2.29843,0.5
+	rot = 0,0.707106781,0,0.707106781
+	attRot = 0,0,0,1
+	attRot0 = -0.5,0.5,-0.5,0.5
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,Mk33MidTank_330002
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 1
+		height = 4.5
+		stagingEnabled = True
+		towerRot = 0,-0.707106781,0,0.707106781
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = True
+		throttle = 1
+	}
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = launchClamp1_330008
+	partName = Part
+	persistentId = 330008
+	pos = 2.7,4.5,-10
+	attPos = 0,0,0
+	attPos0 = 2.7,-2.29843,0.5
+	rot = 0,-0.707106781,0,0.707106781
+	attRot = 0,0,0,1
+	attRot0 = -0.5,-0.5,0.5,0.5
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,Mk33MidTank_330002
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 1
+		height = 4.5
+		stagingEnabled = True
+		towerRot = 0,0.707106781,0,0.707106781
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = True
+		throttle = 1
+	}
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}

@@ -1,0 +1,66 @@
+{
+  "status": "STATIC_CHECKS_ONLY_NOT_RUN_IN_KSP",
+  "part_count": 8,
+  "reciprocal_stack_connections": [
+    {
+      "pair": "Mk33Cockpit.bottom <-> Mk33MidTank.top",
+      "separation_m": 8.881784197001252e-16,
+      "opposing_direction_error": 0.0,
+      "world_position": [
+        0.0,
+        5.000000000000001,
+        -2.7015700000000002
+      ],
+      "reciprocal": true
+    },
+    {
+      "pair": "Mk33MidTank.MissionModuleNode1 <-> wbiMk33KrewModule.mount",
+      "separation_m": 4.440892098500626e-16,
+      "opposing_direction_error": 0.0,
+      "world_position": [
+        0.0,
+        3.3013900000000005,
+        -3.9515700000000016
+      ],
+      "reciprocal": true
+    },
+    {
+      "pair": "wbiMk33KrewModule.bottom <-> wbiMk33Airlock.top",
+      "separation_m": 1.2560739669470201e-15,
+      "opposing_direction_error": 0.0,
+      "world_position": [
+        0.0,
+        5.002070000000001,
+        -5.201650000000001
+      ],
+      "reciprocal": true
+    }
+  ],
+  "tree_connected_and_acyclic": true,
+  "fuel_saved_empty": true,
+  "fuel_maxima_unchanged": true,
+  "clamps": "Placement/tower extension are unverified in KSP; reattach in SPH if necessary.",
+  "scope": "Attachment graph and coordinates, not FreeIVA/Unity physical passage.",
+  "core_part_origins": {
+    "Mk33Cockpit": [
+      0,
+      0,
+      0
+    ],
+    "Mk33MidTank": [
+      0,
+      -7.70157,
+      0
+    ],
+    "wbiMk33KrewModule": [
+      0,
+      -3.95157,
+      -0.00207
+    ],
+    "wbiMk33Airlock": [
+      0,
+      -6.45061,
+      -0.00207
+    ]
+  }
+}

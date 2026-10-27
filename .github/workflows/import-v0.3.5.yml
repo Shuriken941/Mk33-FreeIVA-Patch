@@ -1,0 +1,113 @@
+name: Import Mk33 FreeIVA V0.3.5 sources
+
+on:
+  push:
+    paths:
+      - '.github/workflows/import-v0.3.5.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Download and verify published V0.3.5 archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --output "$RUNNER_TEMP/release.zip" \
+            'https://github.com/Shuriken941/Mk33-FreeIVA-Patch/releases/download/V0.3.5/Mk33_FreeIVA_Patch_v0.3.5.zip'
+          echo '0e791fd4a9cc0b98f8fdfa129c5fb5ff80384318d9622c8583aaa7a5614cb212  '"$RUNNER_TEMP/release.zip" | sha256sum -c -
+
+      - name: Safely extract and verify release manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path, PurePosixPath
+          from zipfile import ZipFile
+          import os, shutil, stat
+
+          archive = Path(os.environ['RUNNER_TEMP']) / 'release.zip'
+          dest = Path(os.environ['RUNNER_TEMP']) / 'mk33-release'
+          dest.mkdir(parents=True, exist_ok=True)
+          prefix = 'GameData/Mk33FreeIVA/'
+          count = 0
+          with ZipFile(archive) as z:
+              for info in z.infolist():
+                  if info.is_dir():
+                      continue
+                  if not info.filename.startswith(prefix):
+                      raise SystemExit(f'Unexpected path: {info.filename}')
+                  relative = PurePosixPath(info.filename[len(prefix):])
+                  if not relative.parts or relative.is_absolute() or '..' in relative.parts:
+                      raise SystemExit(f'Unsafe path: {info.filename}')
+                  if stat.S_IFMT(info.external_attr >> 16) == stat.S_IFLNK:
+                      raise SystemExit(f'Symlink not allowed: {info.filename}')
+                  target = dest.joinpath(*relative.parts)
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  with z.open(info) as src, target.open('wb') as dst:
+                      shutil.copyfileobj(src, dst)
+                  count += 1
+          if count != 123:
+              raise SystemExit(f'Expected 123 files, found {count}')
+          print(f'Extracted {count} verified-path files')
+          PY
+          cd "$RUNNER_TEMP/mk33-release"
+          sha256sum -c MANIFEST.sha256
+
+      - name: Replace legacy development files with V0.3.5 files
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp README.md "$RUNNER_TEMP/marketing-readme.md"
+          rm -rf Models Patches Plugins Source Tests LICENSES
+          cp -a "$RUNNER_TEMP/mk33-release/." ./
+          mkdir -p docs
+          cp README.md docs/README-v0.3.5-uk.md
+          cp "$RUNNER_TEMP/marketing-readme.md" README.md
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib
+
+          p = Path('README.md')
+          original = '> **Source version note:** The development files in the `main` branch are the **early V0.1 source snapshot**. They have been reorganized for readability, not updated to match the latest release. For **V0.3.5**, download the release ZIP; do not assume that the source here describes the latest implementation.'
+          revised = '> **Source version:** The `main` branch now contains the sources and assets from the **V0.3.5 release**. For installation use the release ZIP. The original Ukrainian release instructions are at [docs/README-v0.3.5-uk.md](docs/README-v0.3.5-uk.md).'
+          content = p.read_text()
+          if original not in content:
+              raise SystemExit('README source version note changed; refusing to overwrite')
+          p.write_text(content.replace(original, revised).replace('## Features', '[V0.3.5 changelog](CHANGELOG.md)\n\n## Features'))
+          manifest = Path('MANIFEST.sha256')
+          entries = manifest.read_text().splitlines()
+          digest = hashlib.sha256(p.read_bytes()).hexdigest()
+          updated = []
+          for entry in entries:
+              hash_value, filename = entry.split(maxsplit=1)
+              if filename.strip(' *') == 'README.md':
+                  hash_value = digest
+              updated.append(f'{hash_value}  {filename.strip()}')
+          manifest.write_text('\n'.join(updated) + '\n')
+          PY
+          sha256sum -c MANIFEST.sha256
+
+      - name: Commit synchronized files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then
+            echo 'Repository already matches V0.3.5'
+            exit 0
+          fi
+          git commit -m 'Sync V0.3.5 sources and assets from verified release ZIP'
+          git push origin HEAD:main

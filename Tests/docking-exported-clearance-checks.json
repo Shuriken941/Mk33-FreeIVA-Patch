@@ -1,0 +1,202 @@
+{
+  "in_game_tested": false,
+  "actual_exported_colliders_checked": true,
+  "static_central_shaft": {
+    "triangles": 144,
+    "boundary_loops": 2,
+    "boundary_vertex_degrees_all_two": true,
+    "nonmanifold_edges": 0,
+    "boundary_edges": 36
+  },
+  "outside_offset_dogleg_absent": true,
+  "central_docking_route_not_sealed": true,
+  "fixed_lining_below_original_roof": true,
+  "models": {
+    "native_unit_length": {
+      "tube_scale_y": 1.0,
+      "outlet_seam_maximum_vertex_gap_m": 5.960464477539063e-08,
+      "maximum_tube_radius_m": 0.39000001432473463,
+      "within_original_port_lip_radius_m": 0.3989,
+      "no_tube_caps": true,
+      "paths": {
+        "forward": {
+          "body": {
+            "sample_count": 491,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.050000002243042074,
+            "conservative_swept_clearance_lower_bound_metres": 0.04500000224304208,
+            "worst_center": [
+              0.0,
+              1.055827,
+              0.0839419917142857
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .20 height .60"
+          },
+          "helmet_capsule": {
+            "sample_count": 491,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.0500000022430421,
+            "conservative_swept_clearance_lower_bound_metres": 0.045000002243042105,
+            "worst_center": [
+              0.0,
+              1.055827,
+              0.0839419917142857
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .225 height .60"
+          }
+        },
+        "reverse": {
+          "body": {
+            "sample_count": 491,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.050000002243042074,
+            "conservative_swept_clearance_lower_bound_metres": 0.04500000224304208,
+            "worst_center": [
+              0.0,
+              1.055827,
+              0.22304428771428575
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .20 height .60"
+          },
+          "helmet_capsule": {
+            "sample_count": 491,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.0500000022430421,
+            "conservative_swept_clearance_lower_bound_metres": 0.045000002243042105,
+            "worst_center": [
+              0.0,
+              1.055827,
+              0.22304428771428575
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .225 height .60"
+          }
+        }
+      },
+      "including_decorative_fixtures": {
+        "body": {
+          "sample_count": 491,
+          "max_step_metres": 0.005,
+          "min_sampled_clearance_metres": 0.050000002243042074,
+          "conservative_swept_clearance_lower_bound_metres": 0.04500000224304208,
+          "worst_center": [
+            0.0,
+            1.055827,
+            0.0839419917142857
+          ],
+          "clear": true,
+          "shape": "standing capsule radius .20 height .60"
+        },
+        "helmet_capsule": {
+          "sample_count": 491,
+          "max_step_metres": 0.005,
+          "min_sampled_clearance_metres": 0.0500000022430421,
+          "conservative_swept_clearance_lower_bound_metres": 0.045000002243042105,
+          "worst_center": [
+            0.0,
+            1.055827,
+            0.0839419917142857
+          ],
+          "clear": true,
+          "shape": "standing capsule radius .225 height .60"
+        }
+      }
+    },
+    "deployed_docking_plane": {
+      "tube_scale_y": 1.0598599433898925,
+      "outlet_seam_maximum_vertex_gap_m": 5.960464477539063e-08,
+      "maximum_tube_radius_m": 0.39000001432473463,
+      "within_original_port_lip_radius_m": 0.3989,
+      "no_tube_caps": true,
+      "paths": {
+        "forward": {
+          "body": {
+            "sample_count": 503,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.050000002243042074,
+            "conservative_swept_clearance_lower_bound_metres": 0.04500000224304208,
+            "worst_center": [
+              0.0,
+              1.055827,
+              0.0839419917142857
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .20 height .60"
+          },
+          "helmet_capsule": {
+            "sample_count": 503,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.0500000022430421,
+            "conservative_swept_clearance_lower_bound_metres": 0.045000002243042105,
+            "worst_center": [
+              0.0,
+              1.055827,
+              0.0839419917142857
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .225 height .60"
+          }
+        },
+        "reverse": {
+          "body": {
+            "sample_count": 503,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.050000002243042074,
+            "conservative_swept_clearance_lower_bound_metres": 0.04500000224304208,
+            "worst_center": [
+              0.0,
+              1.055827,
+              0.22304428771428575
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .20 height .60"
+          },
+          "helmet_capsule": {
+            "sample_count": 503,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.0500000022430421,
+            "conservative_swept_clearance_lower_bound_metres": 0.045000002243042105,
+            "worst_center": [
+              0.0,
+              1.055827,
+              0.22304428771428575
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .225 height .60"
+          }
+        }
+      },
+      "including_decorative_fixtures": {
+        "body": {
+          "sample_count": 503,
+          "max_step_metres": 0.005,
+          "min_sampled_clearance_metres": 0.050000002243042074,
+          "conservative_swept_clearance_lower_bound_metres": 0.04500000224304208,
+          "worst_center": [
+            0.0,
+            1.055827,
+            0.0839419917142857
+          ],
+          "clear": true,
+          "shape": "standing capsule radius .20 height .60"
+        },
+        "helmet_capsule": {
+          "sample_count": 503,
+          "max_step_metres": 0.005,
+          "min_sampled_clearance_metres": 0.0500000022430421,
+          "conservative_swept_clearance_lower_bound_metres": 0.045000002243042105,
+          "worst_center": [
+            0.0,
+            1.055827,
+            0.0839419917142857
+          ],
+          "clear": true,
+          "shape": "standing capsule radius .225 height .60"
+        }
+      }
+    }
+  }
+}

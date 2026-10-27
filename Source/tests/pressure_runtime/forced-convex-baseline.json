@@ -1,0 +1,39 @@
+{
+  "version": "0.3.2",
+  "dependency_double_execution": true,
+  "native_mu_parser_executed": false,
+  "in_game_tested": false,
+  "trigger": "Imported MeshCollider2 is forced convex=true as in KSPCF 1.41.1 MuParser, before strict helper validation",
+  "observed": [
+    {
+      "module": "Mk33FreeIvaGeometry",
+      "imported_convex": true,
+      "shell_marker_present": false,
+      "allows_unbuckling": false,
+      "error": "[Mk33FreeIVA] wbiMk33CockpitSpace: InvalidOperationException: Required corridor shell 'Mk33CorridorShell' is not a solid nonconvex layer-16 mesh.. This INTERNAL is NOT validated; do not use FreeIVA here until corrected."
+    },
+    {
+      "module": "Mk33FreeIvaAuthoredShell",
+      "imported_convex": true,
+      "marker_complete": false,
+      "allows_unbuckling": false,
+      "error": "[Mk33FreeIVA] test: authored shell is INCOMPLETE: Authored shell 'Mk33ProbeCoreShell' is not a solid, nonconvex layer-16 mesh."
+    }
+  ],
+  "pressure_source_sha256": "12344d534659914fb0ec5115b32bf0971dd133b6b5df6f3d88df7b8c912a07c3",
+  "geometry_source_sha256": "82bcff06eddb5689726a41c521c13fda52134e19b740c58e0f31af618c41589c",
+  "parser_evidence": {
+    "source": "KSPCommunityFixes 1.41.1 MuParser.ReadMeshCollider2",
+    "source_sha256": "0374d56de3595efaf4832adab2491bb5c62577ea0b6fb863408068b9edf29951",
+    "lines": [
+      630,
+      636
+    ],
+    "sets_convex_true_and_skips_file_convex_bool": true
+  },
+  "user_log_evidence": {
+    "path": "KSP.log supplied by user for v0.3.2",
+    "line": 315720,
+    "message": "Required corridor shell 'Mk33CorridorShell' is not a solid nonconvex layer-16 mesh."
+  }
+}

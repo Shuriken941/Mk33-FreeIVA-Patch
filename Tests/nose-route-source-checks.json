@@ -1,0 +1,244 @@
+{
+  "in_game_tested": false,
+  "modulemanager_executed": false,
+  "native_meshcutter_executed": false,
+  "method": "Read actual upstream transforms; independently subtract a 32-sided convex cylinder from source triangles. Capsule poses and center segment samples <=5mm; subtract .01m allowance.",
+  "part_to_internal_matrix": [
+    [
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  ],
+  "route": [
+    "Mk33Cockpit.top",
+    "Mk33ProbeCore.bottom",
+    "Mk33ProbeCore.topNode",
+    "Mk33DockingNoseCone.bottom01",
+    "Mk33DockingNoseCone.dockingNode",
+    "peer docking hatch"
+  ],
+  "ownership": {
+    "Mk33ProbeCore_has_original_docking_module": false,
+    "docking_module_part": "Mk33DockingNoseCone",
+    "probe_requires_new_internal": true,
+    "nose_requires_new_internal": true
+  },
+  "source_attach_transforms_part_coordinates": {
+    "probe_topNode": [
+      0.005915045272558926,
+      1.3719479155893877,
+      0.7693699002265928
+    ],
+    "nose_dockingNode": [
+      1.0900496505428237e-07,
+      0.2599500119686126,
+      0.0
+    ]
+  },
+  "recommended_iva_endpoints": {
+    "probe_rear": [
+      0.0,
+      -0.625,
+      1.5852
+    ],
+    "probe_front": [
+      -0.005915045272558926,
+      -0.7693699002265928,
+      -1.3719479155893877
+    ],
+    "nose_rear": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "nose_front": [
+      -1.0900496505428237e-07,
+      0.0,
+      -0.2599500119686126
+    ]
+  },
+  "assembled_in_cockpit_iva": {
+    "probe_origin": [
+      0.0,
+      0.0,
+      -4.33904
+    ],
+    "probe_rear": [
+      0.0,
+      -0.625,
+      -2.75384
+    ],
+    "nose_origin": [
+      -0.005915045272558926,
+      -0.7693699002265928,
+      -5.710987915589388
+    ],
+    "nose_docking_port": [
+      -0.00591515427752398,
+      -0.7693699002265928,
+      -5.970937927558
+    ]
+  },
+  "front_cap_cut": {
+    "targets": [
+      "crewTube",
+      "Dashboard"
+    ],
+    "radius_metres": 0.525,
+    "x": 0,
+    "y": -0.6253,
+    "z_range": [
+      -2.84,
+      -2.64
+    ]
+  },
+  "front_cap_before": {
+    "body": {
+      "radius_metres": 0.2,
+      "height_metres": 0.6,
+      "conservative_clearance_lower_bound_metres": -0.20844639355541025,
+      "nearest_mesh": "Dashboard",
+      "worst_center": [
+        0,
+        -0.6253,
+        -2.75
+      ],
+      "clear": false
+    },
+    "helmet": {
+      "radius_metres": 0.225,
+      "height_metres": 0.6,
+      "conservative_clearance_lower_bound_metres": -0.23340401089769236,
+      "nearest_mesh": "Dashboard",
+      "worst_center": [
+        0,
+        -0.6253,
+        -2.75
+      ],
+      "clear": false
+    }
+  },
+  "front_cap_after": {
+    "body": {
+      "radius_metres": 0.2,
+      "height_metres": 0.6,
+      "conservative_clearance_lower_bound_metres": 0.21295430617751615,
+      "nearest_mesh": "Dashboard",
+      "worst_center": [
+        0,
+        -0.6253,
+        -2.75
+      ],
+      "clear": true
+    },
+    "helmet": {
+      "radius_metres": 0.225,
+      "height_metres": 0.6,
+      "conservative_clearance_lower_bound_metres": 0.21283387877032497,
+      "nearest_mesh": "Dashboard",
+      "worst_center": [
+        0,
+        -0.6253,
+        -2.75
+      ],
+      "clear": true
+    }
+  },
+  "probe_authored_skin_external_fit": {
+    "method": "199 longitudinal slices excluding 0.5% terminal edges; 64 circumference samples per slice; outermost original probeCoreMesh X intersections at each point Z.",
+    "sampled_points": 12736,
+    "missing_slices": 0,
+    "authored_radius_metres": 0.515,
+    "minimum_sampled_exterior_envelope_x_margin_metres": 0.4247780551407737,
+    "within_sampled_envelope": true,
+    "limitation": "An exterior envelope check, not a claim that original visual caps are physically open or a continuous airtight source hull."
+  },
+  "limitations": "This verifies source aperture and attachment geometry only. New authored corridor mesh, native dynamic connection, collider cooking, locomotion and all gameplay require separate checks.",
+  "configuration_integration": {
+    "six_internal_configurations": true,
+    "generated_pressure_caps": 13,
+    "source_cut_caps_loaded_and_required_before_cuts": true,
+    "original_doors_and_auxiliary_shells_required_before_cuts": true,
+    "authored_shell_validated_before_pressure_caps": true,
+    "all_walking_patches_require_own_dll": true,
+    "nose_route_native_node_bindings": true,
+    "only_closed_local_corridor_entrance_can_open_without_peer": true
+  },
+  "krew_source_and_authored_route": {
+    "source_meshes_after_configured_cuts_included": true,
+    "actual_central_door_shaft_and_deployed_sleeve_colliders_included": true,
+    "embedded_central_door_assumed_open": true,
+    "neighboring_exterior_crewDoor_not_used": true,
+    "tested_triangles": 1224,
+    "paths": {
+      "outward": {
+        "body": {
+          "sample_count": 503,
+          "max_step_metres": 0.005,
+          "min_sampled_clearance_metres": 0.050000002243042074,
+          "conservative_swept_clearance_lower_bound_metres": 0.04500000224304208,
+          "worst_center": [
+            0.0,
+            1.055827,
+            0.0839419917142857
+          ],
+          "clear": true,
+          "shape": "standing capsule radius .20 height .60"
+        },
+        "helmet": {
+          "sample_count": 503,
+          "max_step_metres": 0.005,
+          "min_sampled_clearance_metres": 0.0500000022430421,
+          "conservative_swept_clearance_lower_bound_metres": 0.045000002243042105,
+          "worst_center": [
+            0.0,
+            1.055827,
+            0.0839419917142857
+          ],
+          "clear": true,
+          "shape": "standing capsule radius .225 height .60"
+        }
+      },
+      "inward": {
+        "body": {
+          "sample_count": 503,
+          "max_step_metres": 0.005,
+          "min_sampled_clearance_metres": 0.050000002243042074,
+          "conservative_swept_clearance_lower_bound_metres": 0.04500000224304208,
+          "worst_center": [
+            0.0,
+            1.055827,
+            0.22304428771428575
+          ],
+          "clear": true,
+          "shape": "standing capsule radius .20 height .60"
+        },
+        "helmet": {
+          "sample_count": 503,
+          "max_step_metres": 0.005,
+          "min_sampled_clearance_metres": 0.0500000022430421,
+          "conservative_swept_clearance_lower_bound_metres": 0.045000002243042105,
+          "worst_center": [
+            0.0,
+            1.055827,
+            0.22304428771428575
+          ],
+          "clear": true,
+          "shape": "standing capsule radius .225 height .60"
+        }
+      }
+    },
+    "limitations": "Independent source cut math and actual authored triangles, not native MeshCutter, Unity collider cooking or gameplay."
+  }
+}

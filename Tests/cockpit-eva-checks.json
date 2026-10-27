@@ -1,0 +1,36 @@
+{
+  "in_game_tested": false,
+  "scope": "Original model/config audit and triangle geometry. Native EVA source checked when --freeiva-source is provided. Does not execute KSP spawning, obstruction checks or Physics.",
+  "patch_sha256": "ecfb8e13a623d032e4f1e3de0d7c60fd65614adaea8cb1cc170d83e1bfbafca9",
+  "original_cockpit_iva_sha256": "c779c8bc95f9a4e1733a7474615b829ff57edc8399a3151ec9786ae86f0392ec",
+  "original_external_model_sha256": "5f40175e0459fd8fb7526404ac0b7d619424c4d18df69bd64b655f3f23f8a670",
+  "binding": "Airlock,0",
+  "native_external_exit_tag_and_trigger_valid": true,
+  "native_external_exit_part_position_m": [
+    -3.0406597974901897,
+    2.2369976277576824,
+    0.6299999909713074
+  ],
+  "handle_to_native_exit_separation_m": 0.4303522011778594,
+  "extracted_handle_triangles": 104,
+  "extracted_components_triangles": [
+    20,
+    28,
+    56
+  ],
+  "retained_dashboard_triangles": 6090,
+  "original_leaf_wall_retained": true,
+  "all_original_triangles_preserved_between_source_and_extracted_handle": true,
+  "extracted_handle_disjoint_from_leaf_wall": true,
+  "retained_leaf_grid_probes": 289,
+  "maximum_ray_gap_m": 0.0,
+  "interaction_trigger_dimensions_m": [
+    0.2,
+    0.32,
+    0.32
+  ],
+  "interaction": "Use UNLOCK area on the existing lower EXIT door. Native FreeIVA performs stock EVA immediately, retaining closed art/shell; no unsealed walking hole is created.",
+  "baseline_cockpit_all_existing_hatch_settings_and_cuts_unchanged": true,
+  "native_source_sha256": "a9669cb21826831d659a09cce9355ea34444b054ae2df16bb934ec32b7dd4896",
+  "native_eva_dispatch_and_obstruction_tourist_checks_retained": true
+}

@@ -24,4 +24,6 @@ test -f "$FREEIVA_DLL"
     -langversion:7.3 -optimize+ -deterministic+ -debug- -warnaserror+ \
     "${MK33_REFS[@]}" "-reference:$FREEIVA_DLL" \
     "-out:$MK33_SOURCE_DIR/../Plugins/Mk33FreeIVA.dll" \
-    "$MK33_SOURCE_DIR/Mk33FreeIvaGeometry.cs"
+    "$MK33_SOURCE_DIR/Mk33FreeIvaGeometry.cs" \
+    "$MK33_SOURCE_DIR/Mk33FreeIvaWindowMask.cs" \
+    "$MK33_SOURCE_DIR/Mk33FreeIvaPressureHatch.cs"

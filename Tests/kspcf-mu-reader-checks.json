@@ -1,0 +1,131 @@
+{
+  "in_game_tested": false,
+  "unity_executed": false,
+  "reader": "Independent sequential port of KSPCF 1.41.1 relevant v5 component subset",
+  "source_url": "https://github.com/KSPModdingLibs/KSPCommunityFixes/blob/7969fdc50bf4e350193abe5ba2e89533b12ca02f/KSPCommunityFixes/Library/MuParser.cs",
+  "source_sha256": "0374d56de3595efaf4832adab2491bb5c62577ea0b6fb863408068b9edf29951",
+  "source_fingerprint_verified": true,
+  "negative_trailing_unused_material_fixture": {
+    "accepted": false,
+    "error": "ReadMaterials: matDummies[1] out of range (Count=1)",
+    "details": {
+      "stage": "ReadMaterials",
+      "material_index": 1,
+      "material_count": 2,
+      "mat_dummies_count": 1,
+      "byte_offset": 121
+    }
+  },
+  "models": {
+    "CircularHatch.mu": {
+      "accepted": true,
+      "geometry_sha256": "5ab0ad50c28d3efab48e5ee80c10292c833b84483d65f518d974488b728ca064",
+      "material_count": 2,
+      "texture_count": 2,
+      "mat_dummies_count": 2,
+      "component_counts": {
+        "MeshCollider": 1,
+        "MeshFilter": 7,
+        "MeshRenderer": 7,
+        "BoxCollider": 2
+      },
+      "all_renderer_materials_and_textures_bound": true
+    },
+    "CockpitCorridor.mu": {
+      "accepted": true,
+      "geometry_sha256": "65ec6ef0315a185183cdf4f4d6057c32ff51c4db1bc2290d41f6760a2067c0eb",
+      "material_count": 6,
+      "texture_count": 6,
+      "mat_dummies_count": 6,
+      "component_counts": {
+        "MeshCollider": 1,
+        "MeshFilter": 34,
+        "MeshRenderer": 34,
+        "Light": 6,
+        "BoxCollider": 1
+      },
+      "all_renderer_materials_and_textures_bound": true
+    },
+    "InteractionPoints.mu": {
+      "accepted": true,
+      "geometry_sha256": "cbd32cc7710a743195c2c9d4350cb25c1fa0dc45dcc68f262ed714e32c96b19b",
+      "material_count": 0,
+      "texture_count": 0,
+      "mat_dummies_count": 0,
+      "component_counts": {},
+      "all_renderer_materials_and_textures_bound": true
+    },
+    "KrewAirlockBridge.mu": {
+      "accepted": true,
+      "geometry_sha256": "f237232752260446be25ad762fc1b8bdb3db4fee256503f4858cb18efa7f9cf7",
+      "material_count": 4,
+      "texture_count": 4,
+      "mat_dummies_count": 4,
+      "component_counts": {
+        "MeshCollider": 1,
+        "MeshFilter": 4,
+        "MeshRenderer": 4,
+        "Light": 1
+      },
+      "all_renderer_materials_and_textures_bound": true
+    },
+    "KrewDockPassage.mu": {
+      "accepted": true,
+      "geometry_sha256": "d8395f931bdb4231c3450a9b4b042098761c985cc0be44d5c1b8ed9f7340b35d",
+      "material_count": 6,
+      "texture_count": 6,
+      "mat_dummies_count": 6,
+      "component_counts": {
+        "MeshCollider": 1,
+        "MeshFilter": 12,
+        "MeshRenderer": 12,
+        "BoxCollider": 1,
+        "Light": 2
+      },
+      "all_renderer_materials_and_textures_bound": true
+    },
+    "KrewDockTube.mu": {
+      "accepted": true,
+      "geometry_sha256": "08fe03bf8f48810e81aef07ab0b62aebe3e3e6a8a72e0b9d8bfe1d66072461ff",
+      "material_count": 5,
+      "texture_count": 5,
+      "mat_dummies_count": 5,
+      "component_counts": {
+        "MeshCollider": 1,
+        "MeshFilter": 8,
+        "MeshRenderer": 8,
+        "Light": 2,
+        "BoxCollider": 1
+      },
+      "all_renderer_materials_and_textures_bound": true
+    },
+    "NoseDockPassage.mu": {
+      "accepted": true,
+      "geometry_sha256": "3025253702b49bbc3c692c3ec801ff809b7d17fc534c1a587e1c05b64bde8d4d",
+      "material_count": 6,
+      "texture_count": 6,
+      "mat_dummies_count": 6,
+      "component_counts": {
+        "MeshCollider": 2,
+        "MeshFilter": 10,
+        "MeshRenderer": 10,
+        "Light": 1
+      },
+      "all_renderer_materials_and_textures_bound": true
+    },
+    "ProbeCorePassage.mu": {
+      "accepted": true,
+      "geometry_sha256": "1b3733e20acec11cf410358c4330693dcef2bbb7283d7969ad91d1b382b82d66",
+      "material_count": 6,
+      "texture_count": 6,
+      "mat_dummies_count": 6,
+      "component_counts": {
+        "MeshCollider": 1,
+        "MeshFilter": 10,
+        "MeshRenderer": 10,
+        "Light": 3
+      },
+      "all_renderer_materials_and_textures_bound": true
+    }
+  }
+}

@@ -12,6 +12,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Mk33FreeIvaGeometry.cs" />
+    <Compile Include="Mk33FreeIvaWindowMask.cs" />
+    <Compile Include="Mk33FreeIvaPressureHatch.cs" />
     <Reference Include="Assembly-CSharp"><HintPath>$(KSP_MANAGED)/Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="UnityEngine"><HintPath>$(KSP_MANAGED)/UnityEngine.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="UnityEngine.CoreModule"><HintPath>$(KSP_MANAGED)/UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>

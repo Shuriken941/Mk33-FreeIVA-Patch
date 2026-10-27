@@ -35,6 +35,34 @@
     "WildBlueIndustries/Mk-33/Parts/SharedAssets/controlCabDepthmask.mu": {
       "sha256": "91cf31bbf9d281849cd81bd10d189f16ed51eac8a3b9d5d0e2ebd696f90ebf7f",
       "bytes": 11342
+    },
+    "WildBlueIndustries/Mk-33/Parts/Control/Mk33ProbeCore.cfg": {
+      "sha256": "941cc50447291f9afda55e5813ec598db9a0f24bf784d237d3bb7653e3a9d441",
+      "bytes": 5264
+    },
+    "WildBlueIndustries/Mk-33/Parts/Control/Mk33Cockpit.cfg": {
+      "sha256": "e082c3f2c86972256d9b42cbf2f687e44554d2c8aa30b9c3a2df641ff49cf56e",
+      "bytes": 6426
+    },
+    "WildBlueIndustries/Mk-33/Parts/SharedAssets/Mk33ProbeCore.mu": {
+      "sha256": "d117face4dcfefe004b40311e9e4f05416a98f90790821b5ff0c6fb94952e498",
+      "bytes": 943782
+    },
+    "WildBlueIndustries/Mk-33/Parts/Coupling/Mk33DockingNoseCone.cfg": {
+      "sha256": "cd037251a8cc1d2a203eaa3c91d322954980bd2d91b9f159f30468717e55fc71",
+      "bytes": 2339
+    },
+    "WildBlueIndustries/Mk-33/Parts/SharedAssets/dockingNoseCone.mu": {
+      "sha256": "7e0be03a8ee3498df8baea93d9f2575bdf753586084dbe38ab2ba6385d807a1a",
+      "bytes": 229502
+    },
+    "WildBlueIndustries/Mk-33/Parts/Payload/crewModule.cfg": {
+      "sha256": "b8344e2d52b49488a10793ffeee650ed591ba873631e2e910e65eb05dba2212d",
+      "bytes": 3785
+    },
+    "WildBlueIndustries/Mk-33/Parts/SharedAssets/krewModule.mu": {
+      "sha256": "63bf6c0de829a2386bdfdeb6281ac4fb741e6f4cd034bd2c0d7f2a2286dbff4d",
+      "bytes": 422735
     }
   }
 }

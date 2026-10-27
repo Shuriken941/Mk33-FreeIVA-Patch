@@ -1,0 +1,253 @@
+{
+  "in_game_tested": false,
+  "native_meshcutter_executed": false,
+  "method": "Decode actual .mu collision triangles; exact segment/triangle distance at <=5mm centre spacing, subtract 5mm sweep bound. Tests only own skins and stated central trajectories, not source cuts, loader, gravity, attached-part orientation or seating.",
+  "models": {
+    "ProbeCorePassage": {
+      "topology": {
+        "triangles": 64,
+        "boundary_loops": 2,
+        "boundary_vertex_degrees_all_two": true,
+        "nonmanifold_edges": 0,
+        "boundary_edges": 64
+      },
+      "export_matches_authored_data": true,
+      "inward_skin": true,
+      "open_terminal_rings": true,
+      "point_lights": 3,
+      "capsule_paths": {
+        "forward": {
+          "body": {
+            "sample_count": 594,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.21251112833915464,
+            "conservative_swept_clearance_lower_bound_metres": 0.20751112833915464,
+            "worst_center": [
+              -4.987390617706576e-05,
+              -0.6262172841503373,
+              1.5602662064452781
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .20 height .60"
+          },
+          "helmet": {
+            "sample_count": 594,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.21236119727645317,
+            "conservative_swept_clearance_lower_bound_metres": 0.20736119727645316,
+            "worst_center": [
+              -4.987390617706576e-05,
+              -0.6262172841503373,
+              1.5602662064452781
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .225 height .60"
+          }
+        },
+        "reverse": {
+          "body": {
+            "sample_count": 594,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.21251112833915464,
+            "conservative_swept_clearance_lower_bound_metres": 0.20751112833915464,
+            "worst_center": [
+              -4.98739061770663e-05,
+              -0.6262172841503373,
+              1.5602662064452784
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .20 height .60"
+          },
+          "helmet": {
+            "sample_count": 594,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.21236119727645317,
+            "conservative_swept_clearance_lower_bound_metres": 0.20736119727645316,
+            "worst_center": [
+              -4.98739061770663e-05,
+              -0.6262172841503373,
+              1.5602662064452784
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .225 height .60"
+          }
+        }
+      }
+    },
+    "NoseDockPassage": {
+      "topology": {
+        "triangles": 64,
+        "boundary_loops": 2,
+        "boundary_vertex_degrees_all_two": true,
+        "nonmanifold_edges": 0,
+        "boundary_edges": 64
+      },
+      "export_matches_authored_data": true,
+      "inward_skin": true,
+      "open_terminal_rings": true,
+      "point_lights": 1,
+      "capsule_paths": {
+        "forward": {
+          "body": {
+            "sample_count": 50,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.21300165445864716,
+            "conservative_swept_clearance_lower_bound_metres": 0.20800165445864716,
+            "worst_center": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .20 height .60"
+          },
+          "helmet": {
+            "sample_count": 50,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.21288127305472418,
+            "conservative_swept_clearance_lower_bound_metres": 0.20788127305472417,
+            "worst_center": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .225 height .60"
+          }
+        },
+        "reverse": {
+          "body": {
+            "sample_count": 50,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.21300165445864716,
+            "conservative_swept_clearance_lower_bound_metres": 0.20800165445864716,
+            "worst_center": [
+              0.0,
+              0.0,
+              -0.245
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .20 height .60"
+          },
+          "helmet": {
+            "sample_count": 50,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.21288127305472418,
+            "conservative_swept_clearance_lower_bound_metres": 0.20788127305472417,
+            "worst_center": [
+              0.0,
+              0.0,
+              -0.245
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .225 height .60"
+          }
+        }
+      },
+      "native_dynamic_tube_axis_outward": true,
+      "native_dynamic_tube_length": 1.0,
+      "native_dynamic_tube_topology": {
+        "triangles": 64,
+        "boundary_loops": 2,
+        "boundary_vertex_degrees_all_two": true,
+        "nonmanifold_edges": 0,
+        "boundary_edges": 64
+      },
+      "native_dynamic_tube_capsule_paths": {
+        "body": {
+          "sample_count": 201,
+          "max_step_metres": 0.005,
+          "min_sampled_clearance_metres": 0.21300165445864694,
+          "conservative_swept_clearance_lower_bound_metres": 0.20800165445864693,
+          "worst_center": [
+            0.0,
+            0.0,
+            -0.24500000476837158
+          ],
+          "clear": true,
+          "shape": "standing capsule radius .20 height .60"
+        },
+        "helmet": {
+          "sample_count": 201,
+          "max_step_metres": 0.005,
+          "min_sampled_clearance_metres": 0.21288127305472407,
+          "conservative_swept_clearance_lower_bound_metres": 0.20788127305472406,
+          "worst_center": [
+            0.0,
+            0.0,
+            -0.24500000476837158
+          ],
+          "clear": true,
+          "shape": "standing capsule radius .225 height .60"
+        }
+      }
+    }
+  },
+  "combined_probe_to_nose_route": {
+    "source_craft_relative_orientation": "identity",
+    "nose_origin_in_probe_iva": [
+      -0.0059150452726,
+      -0.76936990023,
+      -1.37194791559
+    ],
+    "capsule_paths": {
+      "forward": {
+        "body": {
+          "sample_count": 845,
+          "max_step_metres": 0.005,
+          "min_sampled_clearance_metres": 0.21251112833915464,
+          "conservative_swept_clearance_lower_bound_metres": 0.20751112833915464,
+          "worst_center": [
+            -4.987390617706576e-05,
+            -0.6262172841503373,
+            1.5602662064452781
+          ],
+          "clear": true,
+          "shape": "standing capsule radius .20 height .60"
+        },
+        "helmet": {
+          "sample_count": 845,
+          "max_step_metres": 0.005,
+          "min_sampled_clearance_metres": 0.21236119727645317,
+          "conservative_swept_clearance_lower_bound_metres": 0.20736119727645316,
+          "worst_center": [
+            -4.987390617706576e-05,
+            -0.6262172841503373,
+            1.5602662064452781
+          ],
+          "clear": true,
+          "shape": "standing capsule radius .225 height .60"
+        }
+      },
+      "reverse": {
+        "body": {
+          "sample_count": 845,
+          "max_step_metres": 0.005,
+          "min_sampled_clearance_metres": 0.21251112833915464,
+          "conservative_swept_clearance_lower_bound_metres": 0.20751112833915464,
+          "worst_center": [
+            -4.98739061770663e-05,
+            -0.6262172841503373,
+            1.5602662064452784
+          ],
+          "clear": true,
+          "shape": "standing capsule radius .20 height .60"
+        },
+        "helmet": {
+          "sample_count": 845,
+          "max_step_metres": 0.005,
+          "min_sampled_clearance_metres": 0.21236119727645317,
+          "conservative_swept_clearance_lower_bound_metres": 0.20736119727645316,
+          "worst_center": [
+            -4.98739061770663e-05,
+            -0.6262172841503373,
+            1.5602662064452784
+          ],
+          "clear": true,
+          "shape": "standing capsule radius .225 height .60"
+        }
+      }
+    },
+    "scope": "combined own skins only; native door opening, part attachment and cockpit source cut remain separate checks"
+  }
+}

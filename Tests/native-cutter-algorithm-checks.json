@@ -1,0 +1,352 @@
+{
+  "upstream_MeshCutter2_sha256": "5a4ac89928a23680236be772df9e5e23d68a62d7492826cfd9e92653638fdd16",
+  "scope": "Exact FreeIVA 0.2.20.2 MeshCutter2 C# with float vector/plane and mesh storage doubles; original source vertices transformed/baked to IVA coordinates. Uses native procedural-cylinder triangle ordering. Tangent recomputation and mesh optimization are no-ops. No Unity/PhysX/native loader or game execution.",
+  "cut_targets": [
+    {
+      "name": "wbiMk33CockpitSpace/Dashboard",
+      "beforeV": 8324,
+      "beforeT": 6090,
+      "afterV": 9005,
+      "afterT": 6999,
+      "finite": true,
+      "indices": true,
+      "toolNum": 2
+    },
+    {
+      "name": "wbiMk33CockpitSpace/crewTube",
+      "beforeV": 5390,
+      "beforeT": 4452,
+      "afterV": 6012,
+      "afterT": 4738,
+      "finite": true,
+      "indices": true,
+      "toolNum": 2
+    },
+    {
+      "name": "wbiMk33CrewModuleSpace/cabinMesh",
+      "beforeV": 1852,
+      "beforeT": 1042,
+      "afterV": 2284,
+      "afterT": 1497,
+      "finite": true,
+      "indices": true,
+      "toolNum": 4
+    },
+    {
+      "name": "wbiMk33CrewModuleSpace/crewTube",
+      "beforeV": 7511,
+      "beforeT": 6260,
+      "afterV": 8148,
+      "afterT": 6549,
+      "finite": true,
+      "indices": true,
+      "toolNum": 4
+    },
+    {
+      "name": "wbiMk33AirlockSpace/airlockIVAMesh",
+      "beforeV": 7002,
+      "beforeT": 6412,
+      "afterV": 7598,
+      "afterT": 6793,
+      "finite": true,
+      "indices": true,
+      "toolNum": 3
+    },
+    {
+      "name": "wbiMk33ControlCabSpace/cabIVAMesh",
+      "beforeV": 76,
+      "beforeT": 40,
+      "afterV": 328,
+      "afterT": 352,
+      "finite": true,
+      "indices": true,
+      "toolNum": 1
+    }
+  ],
+  "embedded_pressure_door_extracted_triangles": 352,
+  "corrected_krew_source_cut_parameters": [
+    {
+      "target": "crewTube",
+      "type": "ProceduralCylinder",
+      "radius": "0.525",
+      "height": "0.15",
+      "slices": "32",
+      "position": "0, -0.025, -1.23",
+      "rotation": "0, 0, 0",
+      "scale": "1, 1, 1"
+    },
+    {
+      "target": "crewTube",
+      "type": "ProceduralCylinder",
+      "radius": "0.525",
+      "height": "0.15",
+      "slices": "32",
+      "position": "0, -0.025, 1.08",
+      "rotation": "0, 0, 0",
+      "scale": "1, 1, 1"
+    },
+    {
+      "target": "cabinMesh",
+      "type": "ProceduralCylinder",
+      "radius": "0.525",
+      "height": "0.15",
+      "slices": "32",
+      "position": "0, -0.025, -1.23",
+      "rotation": "0, 0, 0",
+      "scale": "1, 1, 1"
+    },
+    {
+      "target": "cabinMesh",
+      "type": "ProceduralCylinder",
+      "radius": "0.525",
+      "height": "0.15",
+      "slices": "32",
+      "position": "0, -0.025, 1.08",
+      "rotation": "0, 0, 0",
+      "scale": "1, 1, 1"
+    },
+    {
+      "target": "crewTube",
+      "type": "Cube",
+      "position": "0, 1.055827, 0.17",
+      "rotation": "0, 0, 0",
+      "scale": "0.6, 0.7, 0.34"
+    },
+    {
+      "target": "cabinMesh",
+      "type": "Cube",
+      "position": "0, 1.055827, 0.17",
+      "rotation": "0, 0, 0",
+      "scale": "0.6, 0.7, 0.34"
+    },
+    {
+      "target": "crewTube",
+      "type": "ProceduralCylinder",
+      "radius": "0.41",
+      "height": "0.18",
+      "slices": "32",
+      "position": "0, 1.76, 0.61551148",
+      "rotation": "-90, 0, 0",
+      "scale": "1, 1, 1"
+    },
+    {
+      "target": "cabinMesh",
+      "type": "ProceduralCylinder",
+      "radius": "0.41",
+      "height": "0.18",
+      "slices": "32",
+      "position": "0, 1.76, 0.61551148",
+      "rotation": "-90, 0, 0",
+      "scale": "1, 1, 1"
+    }
+  ],
+  "original_side_EVA_hatch_is_not_bound_to_docking_node": true,
+  "no_new_offset_EVA_aperture_cut": true,
+  "no_added_central_roof_seal": true,
+  "package_source_sha256": {
+    "Patches/Mk33_FreeIVA.cfg": "ecfb8e13a623d032e4f1e3de0d7c60fd65614adaea8cb1cc170d83e1bfbafca9",
+    "Models/KrewDockPassage.mu": "868c2041be5e4d360aa79c3b1e19e3a1b3f0327fc16eb642889be58f3ce101fc",
+    "Models/KrewDockTube.mu": "1eee3789f2f5aa1c9343bf0ded3192234bf1bec9d4d28fef55dcd738800c6f4b"
+  },
+  "paths": {
+    "cockpit_lower_aft": {
+      "body": {
+        "clear": true,
+        "conservative_swept_clearance_lower_bound_metres": 0.21295341343146307,
+        "worst_center": [
+          0.0,
+          -0.6503,
+          -1.547520661157025
+        ],
+        "degenerate_triangles_excluded": 9
+      },
+      "helmet": {
+        "clear": true,
+        "conservative_swept_clearance_lower_bound_metres": 0.21283302501504045,
+        "worst_center": [
+          0.0,
+          -0.6503,
+          -1.547520661157025
+        ],
+        "degenerate_triangles_excluded": 9
+      }
+    },
+    "cockpit_lower_nose": {
+      "body": {
+        "clear": true,
+        "conservative_swept_clearance_lower_bound_metres": 0.2129540424541317,
+        "worst_center": [
+          0.0,
+          -0.6253,
+          -2.751526717557252
+        ],
+        "degenerate_triangles_excluded": 3
+      },
+      "helmet": {
+        "clear": true,
+        "conservative_swept_clearance_lower_bound_metres": 0.21283362940933323,
+        "worst_center": [
+          0.0,
+          -0.6253,
+          -2.751526717557252
+        ],
+        "degenerate_triangles_excluded": 3
+      }
+    },
+    "krew_forward": {
+      "body": {
+        "clear": true,
+        "conservative_swept_clearance_lower_bound_metres": 0.19056540073832468,
+        "worst_center": [
+          0.0,
+          -0.025,
+          -0.85
+        ],
+        "degenerate_triangles_excluded": 0
+      },
+      "helmet": {
+        "clear": true,
+        "conservative_swept_clearance_lower_bound_metres": 0.18474798840252446,
+        "worst_center": [
+          0.0,
+          -0.025,
+          -0.85
+        ],
+        "degenerate_triangles_excluded": 0
+      }
+    },
+    "krew_aft": {
+      "body": {
+        "clear": true,
+        "conservative_swept_clearance_lower_bound_metres": 0.14112391096654892,
+        "worst_center": [
+          0.0,
+          -0.025,
+          0.85
+        ],
+        "degenerate_triangles_excluded": 3
+      },
+      "helmet": {
+        "clear": true,
+        "conservative_swept_clearance_lower_bound_metres": 0.11698359513557953,
+        "worst_center": [
+          0.0,
+          -0.025,
+          0.85
+        ],
+        "degenerate_triangles_excluded": 3
+      }
+    },
+    "krew_docking": {
+      "body": {
+        "clear": true,
+        "conservative_swept_clearance_lower_bound_metres": 0.04000000224304207,
+        "worst_center": [
+          0.0,
+          1.055827,
+          0.0839419917142857
+        ],
+        "degenerate_triangles_excluded": 2
+      },
+      "helmet": {
+        "clear": true,
+        "conservative_swept_clearance_lower_bound_metres": 0.0400000022430421,
+        "worst_center": [
+          0.0,
+          1.055827,
+          0.0839419917142857
+        ],
+        "degenerate_triangles_excluded": 2
+      }
+    },
+    "airlock_forward": {
+      "body": {
+        "clear": true,
+        "conservative_swept_clearance_lower_bound_metres": 0.21295413817406456,
+        "worst_center": [
+          0.0,
+          0.0,
+          -1.18
+        ],
+        "degenerate_triangles_excluded": 1
+      },
+      "helmet": {
+        "clear": true,
+        "conservative_swept_clearance_lower_bound_metres": 0.21283371785604474,
+        "worst_center": [
+          0.0,
+          0.0,
+          -1.18
+        ],
+        "degenerate_triangles_excluded": 1
+      }
+    },
+    "airlock_rear": {
+      "body": {
+        "clear": true,
+        "conservative_swept_clearance_lower_bound_metres": 0.21295516786332452,
+        "worst_center": [
+          0.0,
+          0.0,
+          1.0999999999999999
+        ],
+        "degenerate_triangles_excluded": 1
+      },
+      "helmet": {
+        "clear": true,
+        "conservative_swept_clearance_lower_bound_metres": 0.21283469222883258,
+        "worst_center": [
+          0.0,
+          0.0,
+          1.0999999999999999
+        ],
+        "degenerate_triangles_excluded": 1
+      }
+    },
+    "airlock_roof": {
+      "body": {
+        "clear": true,
+        "conservative_swept_clearance_lower_bound_metres": 0.31247510628933867,
+        "worst_center": [
+          0.0,
+          1.125,
+          0.0
+        ],
+        "degenerate_triangles_excluded": 0
+      },
+      "helmet": {
+        "clear": true,
+        "conservative_swept_clearance_lower_bound_metres": 0.2874716577883013,
+        "worst_center": [
+          0.0,
+          1.1600000000000001,
+          0.0
+        ],
+        "degenerate_triangles_excluded": 0
+      }
+    },
+    "control_cab_roof": {
+      "body": {
+        "clear": true,
+        "conservative_swept_clearance_lower_bound_metres": 0.09202912034123202,
+        "worst_center": [
+          0.0,
+          0.6,
+          0.17
+        ],
+        "degenerate_triangles_excluded": 0
+      },
+      "helmet": {
+        "clear": true,
+        "conservative_swept_clearance_lower_bound_metres": 0.090917110002507,
+        "worst_center": [
+          0.0,
+          0.6,
+          0.17
+        ],
+        "degenerate_triangles_excluded": 0
+      }
+    }
+  },
+  "all_clear": true
+}

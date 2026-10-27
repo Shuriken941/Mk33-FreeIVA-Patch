@@ -2,7 +2,7 @@ ship = Mk33 FreeIVA Static Test
 version = 1.12.5
 description = Unrun static FreeIVA test rig. Seat two crew in cockpit. Do not stage the clamps. See Mk33FreeIVA/Tests/instructions.md.
 type = SPH
-size = 9,8,17
+size = 9,8,20
 steamPublishedFileId = 0
 persistentId = 33330000
 rot = 0,0,0,1
@@ -39,7 +39,9 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = Mk33MidTank_330002
+	link = Mk33ProbeCore_330009
 	attN = bottom,Mk33MidTank_330002_0|-2.70157|0_0|-1|0_0|-2.70157|0_0|-1|0
+	attN = top,Mk33ProbeCore_330009_0|2.75384|0_0|1|0_0|2.75384|0_0|1|0
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -191,6 +193,82 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	attN = top,wbiMk33KrewModule_330003_0|1.24896|0_0|1|0_0|1.24896|0_0|1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = Mk33ProbeCore_330009
+	partName = Part
+	persistentId = 330009
+	pos = 0,5,4.33904
+	attPos = 0,0,0
+	attPos0 = 0,4.33904,0
+	rot = 0.707106781,0,0,0.707106781
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = Mk33DockingNoseCone_330010
+	attN = bottom,Mk33Cockpit_330001_0|-1.5852|0_0|-1|0_0|-1.5852|0_0|-1|0
+	attN = topNode,Mk33DockingNoseCone_330010_0.00591504527|1.37194792|0.7693699_0|1|0_0.00591504527|1.37194792|0.7693699_0|1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = Mk33DockingNoseCone_330010
+	partName = Part
+	persistentId = 330010
+	pos = 0.00591504527,4.2306301,5.71098792
+	attPos = 0,0,0
+	attPos0 = 0.00591504527,1.37194792,0.7693699
+	rot = 0.707106781,0,0,0.707106781
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = bottom01,Mk33ProbeCore_330009_0|0|0_0|-1|0_0|0|0_0|-1|0
 	EVENTS
 	{
 	}

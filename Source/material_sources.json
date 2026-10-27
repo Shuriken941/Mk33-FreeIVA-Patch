@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "description": "Original diffuse source art for Mk33FreeIVA 0.3.5. Models/*.png are canonical source images, not generated build products.",
+  "textures": [
+    {
+      "file": "Models/corridorWall.png",
+      "sha256": "a8d83df9ce49551b8806c6647be9110c6ce473d8a16704d609f2e24e59a6b11f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "source": "Original image generated for this patch using image_gen.imagegen on 2026-10-26. No original Mk33 artwork was uploaded to imagegen or embedded.",
+      "art_direction": "Seamless slate blue-gray quilted spacecraft insulation, precise diagonal diamond stitching, subdued nylon weave, no text or logos.",
+      "processing": "Unmodified generated PNG copied verbatim into Models.",
+      "reproducibility": "This PNG is the canonical art source. Image generation is nondeterministic; rebuilding validates this checked-in source rather than synthesizing it again.",
+      "prompt": "Create a seamless square 1024x1024 diffuse albedo texture for a small retro spacecraft IVA interior wall. Perfectly flat orthographic texture, no perspective, no scene, no objects, no text, no logos, no arrows, no border, no lights. Even non-directional illumination with minimal baked shading. Muted medium slate-blue gray quilted insulation upholstery, precise stitched diagonal diamond grid 8 diamonds across the width, thin recessed charcoal seams, subtle nylon woven fabric microtexture and very slight pillow softness inside each diamond. Clean professionally manufactured spacecraft cabin padding, circa Kerbal Mk-33 / Space Shuttle interior; slightly desaturated medium blue with RGB base approximately 83,108,128. Entire image filled with same seamlessly repeatable diamond quilting, no big seams or frames. Tileable on all four edges. This is a game material diffuse color map, not a render of a room.",
+      "generation_arguments": {
+        "transparent_background": false,
+        "referenced_images": []
+      },
+      "requested_size_note": "The prompt requested 1024 square; the image tool returned 1254 square. The actual supplied PNG was retained unchanged.",
+      "license": "MIT, original patch artwork"
+    },
+    {
+      "file": "Models/corridorWallWarm.png",
+      "sha256": "a8d83df9ce49551b8806c6647be9110c6ce473d8a16704d609f2e24e59a6b11f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "source": "Original image generated for this patch using image_gen.imagegen on 2026-10-26. No original Mk33 artwork was uploaded to imagegen or embedded.",
+      "art_direction": "The same canonical quilted insulation image as corridorWall.png; both sides use a consistent Mk33-style palette.",
+      "processing": "Unmodified generated PNG copied verbatim into Models.",
+      "reproducibility": "This PNG is the canonical art source. Image generation is nondeterministic; rebuilding validates this checked-in source rather than synthesizing it again.",
+      "prompt": "Create a seamless square 1024x1024 diffuse albedo texture for a small retro spacecraft IVA interior wall. Perfectly flat orthographic texture, no perspective, no scene, no objects, no text, no logos, no arrows, no border, no lights. Even non-directional illumination with minimal baked shading. Muted medium slate-blue gray quilted insulation upholstery, precise stitched diagonal diamond grid 8 diamonds across the width, thin recessed charcoal seams, subtle nylon woven fabric microtexture and very slight pillow softness inside each diamond. Clean professionally manufactured spacecraft cabin padding, circa Kerbal Mk-33 / Space Shuttle interior; slightly desaturated medium blue with RGB base approximately 83,108,128. Entire image filled with same seamlessly repeatable diamond quilting, no big seams or frames. Tileable on all four edges. This is a game material diffuse color map, not a render of a room.",
+      "generation_arguments": {
+        "transparent_background": false,
+        "referenced_images": []
+      },
+      "requested_size_note": "The prompt requested 1024 square; the image tool returned 1254 square. The actual supplied PNG was retained unchanged.",
+      "license": "MIT, original patch artwork"
+    },
+    {
+      "file": "Models/corridorFloor.png",
+      "sha256": "9d672bc5ff7ea205d07d523deaf0215a1b34a7bdf7924d4613121fc21a802a15",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "source": "Original image generated for this patch using image_gen.imagegen on 2026-10-26. No original Mk33 artwork was uploaded to imagegen or embedded.",
+      "art_direction": "Seamless dark blue charcoal nonslip rubber flooring with fine straight longitudinal ribs, mild wear, no text, arrows or labels.",
+      "processing": "Unmodified generated PNG copied verbatim into Models.",
+      "reproducibility": "This PNG is the canonical art source. Image generation is nondeterministic; rebuilding validates this checked-in source rather than synthesizing it again.",
+      "prompt": "Create a seamless square 1024x1024 diffuse albedo texture of a spacecraft cabin floor for a game. Perfectly flat orthographic material scan, no perspective, no objects, no text, no labels, no arrows, no symbols, no decorative borders. Medium-dark blue charcoal nonslip rubber flooring, fine straight parallel raised ribs running vertically from top to bottom, closely spaced approx 50 fine straight ribs across the whole image. Slight subtle wear on rib crowns, understated realistic rubber material, subtle smooth microvariation. Muted dark charcoal blue around RGB 48,60,70, lighter rib tops about 75,85,92. Entire image filled with the identical seamlessly repeatable rubber nonslip surface. Uniform ambient illumination only, no large shadows, no vignette. This is a professionally manufactured space shuttle interior floor diffuse color map, not an image of a room.",
+      "generation_arguments": {
+        "transparent_background": false,
+        "referenced_images": []
+      },
+      "requested_size_note": "The prompt requested 1024 square; the image tool returned 1254 square. The actual supplied PNG was retained unchanged.",
+      "license": "MIT, original patch artwork"
+    },
+    {
+      "file": "Models/corridorCeiling.png",
+      "sha256": "babfcf6127233cdaa8f291ee42c9a61cdc7b73c1203723fbdc30bfb069560605",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "source": "Original image generated for this patch using image_gen.imagegen on 2026-10-26. No original Mk33 artwork was uploaded to imagegen or embedded.",
+      "art_direction": "Seamless warm ivory satin-coated aluminum ceiling panels, fine recessed rectangular joints and small countersunk fasteners; no text or labels.",
+      "processing": "Unmodified generated PNG copied verbatim into Models.",
+      "reproducibility": "This PNG is the canonical art source. Image generation is nondeterministic; rebuilding validates this checked-in source rather than synthesizing it again.",
+      "prompt": "Create a seamless square 1024x1024 diffuse albedo material texture for spacecraft ceiling panels in a videogame. Perfectly flat orthographic material scan, no perspective, no objects, no lights, no text, no labels, no symbols, no borders. Pale warm ivory gray satin-coated aluminum panel, RGB base about 193,193,185. A precise narrow rectangular panel seam grid: one fine horizontal dark-gray recessed joint centered on the image, one fine vertical joint centered on the image, four large clean rectangular panels. Very small flush silver countersunk fasteners near the seam intersections, 4 total. Subtle powdercoat microtexture, restrained small soft wear around fasteners only, pristine space shuttle interior style. All panel edges continue seamlessly across the image boundaries; no outside frame. Uniform flat ambient albedo illumination only, no vignette, no baked directional shadows. Tileable on four edges. Diffuse texture map, not room render.",
+      "generation_arguments": {
+        "transparent_background": false,
+        "referenced_images": []
+      },
+      "requested_size_note": "The prompt requested 1024 square; the image tool returned 1254 square. The actual supplied PNG was retained unchanged.",
+      "license": "MIT, original patch artwork"
+    }
+  ]
+}

@@ -14,7 +14,6 @@ def box_planes(center,size):
  return ans
 specs={
  'airlock':(base/'mk33AirlockSpace.mu',{'airlockIVAMesh':[cylinder_planes(0,0,-1.26,-1.08),cylinder_planes(0,0,1.02,1.20),cyl_y((0,0),1.14,1.32,.525)]},{'front_and_rear':[(0,0,z) for z in np.linspace(-1.4,1.4,281)],'roof':[(0,y,0) for y in np.linspace(.6,1.6,101)]},[]),
- 'krew_roof':(base/'crewModuleIVA.mu',{name:[box_planes((1.11893,1.80,.76054),(.62,.24,.70))] for name in ['crewTube','cabinMesh']},{'roof':[(1.11893,y,.76054) for y in np.linspace(-.1,2.15,226)]},['crewDoor','straps']),
  'control_cab_roof':(base/'controlCabIVA.mu',{'cabIVAMesh':[cyl_y((0,.17),1.56,1.74,.5)]},{'roof':[(0,y,.17) for y in np.linspace(.6,1.95,136)]},[])
 }
 report={'in_game_tested':False,'native_meshcutter_executed':False,'method':'independent convex triangle subtraction, radius .20/height .60 upright capsule sampled every <=.01m; .01m allowance for segment and pose sampling; fixed source meshes including seats. This is not Unity collision cooking or locomotion.' ,'cases':{}}

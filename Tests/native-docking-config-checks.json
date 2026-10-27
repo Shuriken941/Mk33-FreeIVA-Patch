@@ -1,0 +1,112 @@
+{
+  "in_game_tested": false,
+  "modulemanager_executed": false,
+  "scope": "Exact original part configs plus limited structural application of own additive INTERNAL/ModuleFreeIva blocks; no execution of other installed mods.",
+  "parts": {
+    "Mk33ProbeCore": {
+      "original_title": "Mk-33 Probe Core",
+      "original_module_names": [
+        "ModuleLiftingSurface",
+        "ModuleCommand",
+        "ModuleReactionWheel",
+        "ModuleSAS",
+        "ModuleKerbNetAccess",
+        "ModuleDataTransmitter",
+        "ModuleScienceContainer",
+        "ModuleResourceConverter",
+        "ModuleRCSFX",
+        "FlagDecal",
+        "FlightEngineerModule",
+        "kOSProcessor"
+      ],
+      "original_modules_unchanged_and_same_order": true,
+      "original_top_level_fields_unchanged": true,
+      "added_module_names": [
+        "ModuleFreeIva"
+      ],
+      "source_cfg_sha256": "941cc50447291f9afda55e5813ec598db9a0f24bf784d237d3bb7653e3a9d441",
+      "original_docking_module_count": 0
+    },
+    "Mk33DockingNoseCone": {
+      "original_title": "Mk-33 Shielded Docking Port",
+      "original_module_names": [
+        "ModuleDockingNode",
+        "ModuleAnimateGeneric",
+        "ModuleColorChanger",
+        "ModuleCargoPart"
+      ],
+      "original_modules_unchanged_and_same_order": true,
+      "original_top_level_fields_unchanged": true,
+      "added_module_names": [
+        "ModuleFreeIva"
+      ],
+      "source_cfg_sha256": "cd037251a8cc1d2a203eaa3c91d322954980bd2d91b9f159f30468717e55fc71",
+      "original_docking_module_count": 1,
+      "docking_fields": {
+        "name": "ModuleDockingNode",
+        "deployAnimationController": "1",
+        "nodeType": "size1",
+        "staged": "False",
+        "stagingEnabled": "False",
+        "nodeTransformName": "dockingNode"
+      },
+      "docking_node_original_position_part_coordinates": [
+        1.0900496505428237e-07,
+        0.2599500119686126,
+        0.0
+      ],
+      "deploy_animation_index_resolves_after_own_patch": true
+    },
+    "wbiMk33KrewModule": {
+      "original_title": "Mk-33 Krew Module",
+      "original_module_names": [
+        "ModuleDockingNode",
+        "ModuleAnimateGeneric",
+        "ModuleScienceExperiment",
+        "ModuleScienceContainer",
+        "ModuleColorChanger",
+        "ModuleKISInventory",
+        "MASRadar",
+        "MASCamera",
+        "ModuleCargoPart"
+      ],
+      "original_modules_unchanged_and_same_order": true,
+      "original_top_level_fields_unchanged": true,
+      "added_module_names": [
+        "ModuleFreeIva"
+      ],
+      "source_cfg_sha256": "b8344e2d52b49488a10793ffeee650ed591ba873631e2e910e65eb05dba2212d",
+      "original_docking_module_count": 1,
+      "docking_fields": {
+        "name": "ModuleDockingNode",
+        "deployAnimationController": "1",
+        "nodeType": "size1",
+        "staged": "False",
+        "stagingEnabled": "False",
+        "nodeTransformName": "dockingNode",
+        "controlTransformName": "controlNode"
+      },
+      "docking_node_original_position_part_coordinates": [
+        0.0,
+        -0.6155114769935608,
+        -2.8598599433898926
+      ],
+      "deploy_animation_index_resolves_after_own_patch": true
+    }
+  },
+  "patch_sha256": "ecfb8e13a623d032e4f1e3de0d7c60fd65614adaea8cb1cc170d83e1bfbafca9",
+  "sample_craft_variants": {
+    "SPH/Mk-33 LFO.craft": {
+      "has_probe_core": true,
+      "has_ordinary_nosecone": true,
+      "has_shielded_docking_nosecone": false
+    },
+    "VAB/Mk-33.craft": {
+      "has_probe_core": true,
+      "has_ordinary_nosecone": false,
+      "has_shielded_docking_nosecone": true
+    }
+  },
+  "conclusion": "No own-patch change to original docking-module settings, module order, deployment controller or external docking transform was found. Original ProbeCore is not a docking port; the separate shielded nosecone is. Runtime behavior of the separate docking nosecone has not been tested in KSP here.",
+  "runtime_collision_or_craft_state_not_verified": true
+}

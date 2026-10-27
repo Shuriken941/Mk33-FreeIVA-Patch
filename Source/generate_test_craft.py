@@ -52,7 +52,7 @@ def fmt(v, sep=","):
 
 PARTS = [
     dict(name="Mk33Cockpit", uid=330001, origin=(0, 0, 0), parent=None,
-         nodes={"bottom": ((0, -2.70157, 0), (0, -1, 0))},
+         nodes={"bottom": ((0, -2.70157, 0), (0, -1, 0)), "top": ((0, 2.75384, 0), (0, 1, 0))},
          resources={"LiquidFuel": 7785, "Oxidizer": 9515}),
     dict(name="Mk33MidTank", uid=330002, origin=(0, -7.70157, 0), parent=330001,
          nodes={"top": ((0, 5, 0), (0, 1, 0)),
@@ -63,11 +63,19 @@ PARTS = [
                 "bottom": ((0, -1.25008, 0), (0, -1, 0))}),
     dict(name="wbiMk33Airlock", uid=330004, origin=(0, -6.45061, -0.00207), parent=330003,
          nodes={"top": ((0, 1.24896, 0), (0, 1, 0))}),
+    dict(name="Mk33ProbeCore", uid=330009, origin=(0, 4.33904, 0), parent=330001,
+         nodes={"bottom": ((0,-1.5852,0),(0,-1,0)),
+                "topNode": ((.0059150452726,1.37194791559,.76936990023),(0,1,0))}),
+    dict(name="Mk33DockingNoseCone", uid=330010,
+         origin=(.0059150452726,5.71098791559,.76936990023), parent=330009,
+         nodes={"bottom01": ((0,0,0),(0,-1,0))}),
 ]
 PAIRS = [
     (330001, "bottom", 330002, "top"),
     (330002, "MissionModuleNode1", 330003, "mount"),
     (330003, "bottom", 330004, "top"),
+    (330001, "top", 330009, "bottom"),
+    (330009, "topNode", 330010, "bottom01"),
 ]
 
 # Stock clamps remain upright in world space. Their surface attachment and
@@ -109,7 +117,7 @@ def generate():
     lines = [
         "ship = Mk33 FreeIVA Static Test", "version = 1.12.5",
         "description = Unrun static FreeIVA test rig. Seat two crew in cockpit. Do not stage the clamps. See Mk33FreeIVA/Tests/instructions.md.",
-        "type = SPH", "size = 9,8,17", "steamPublishedFileId = 0", "persistentId = 33330000",
+        "type = SPH", "size = 9,8,20", "steamPublishedFileId = 0", "persistentId = 33330000",
         "rot = 0,0,0,1", "missionFlag = Squad/Flags/default", "vesselType = Ship",
         "OverrideDefault = False,False,False,False", "OverrideActionControl = 0,0,0,0",
         "OverrideAxisControl = 0,0,0,0", "OverrideGroupNames = ,,,",
@@ -146,7 +154,7 @@ def generate():
         lines += ["\tEVENTS", "\t{", "\t}", "\tACTIONS", "\t{", "\t}", "\tPARTDATA", "\t{", "\t}", "}"]
     content = "\n".join(lines) + "\n"
     assert content.count("{") == content.count("}")
-    assert len(by_id) == len(PARTS) == 8
+    assert len(by_id) == len(PARTS) == 10
     # Every nonroot part must be reachable once through the child graph.
     seen = set()
     def visit(uid):
@@ -159,14 +167,14 @@ def generate():
     assert seen == set(by_id)
     craft = TESTS / "Mk33_FreeIVA_Test.craft"
     craft.write_text(content, encoding="utf-8")
-    report = dict(status="STATIC_CHECKS_ONLY_NOT_RUN_IN_KSP", part_count=8,
+    report = dict(status="STATIC_CHECKS_ONLY_NOT_RUN_IN_KSP", part_count=10,
                   reciprocal_stack_connections=checks, tree_connected_and_acyclic=True,
                   fuel_saved_empty=True, fuel_maxima_unchanged=True,
                   clamps="Placement/tower extension are unverified in KSP; reattach in SPH if necessary.",
                   scope="Attachment graph and coordinates, not FreeIVA/Unity physical passage.",
                   core_part_origins={p["name"]: p["origin"] for p in PARTS if "origin" in p})
     (TESTS / "topology-checks.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-    print(f"Generated {craft.name}: 8 parts; 3 reciprocal node pairs within 1e-6 m; KSP run NOT PERFORMED.")
+    print(f"Generated {craft.name}: 10 parts; 5 reciprocal node pairs within 1e-6 m; KSP run NOT PERFORMED.")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,74 @@
+{
+  "in_game_tested": false,
+  "source_model": "FreeIva/Props/FreeIva_Hatch_Round_Size1",
+  "source_sha256": "ce5e92f0ab5b345d8cf989160f6c3174c0625203b85cbcc7319535b841ba100e",
+  "source_nominal_leaf_radius_m": 0.41,
+  "target_leaf_radius_m": 0.545,
+  "existing_aperture_radius_m": 0.525,
+  "renderers": [
+    {
+      "name": "Hatch_Size1_Door",
+      "vertices": 3661,
+      "triangles": 1348,
+      "bounds_unity_min": [
+        -0.5449999556308838,
+        -0.1144796730269019,
+        -0.5449999952461662
+      ],
+      "bounds_unity_max": [
+        0.5680404884922431,
+        0.12700451492536355,
+        0.5449999952461658
+      ]
+    },
+    {
+      "name": "handle_exterior",
+      "vertices": 376,
+      "triangles": 130,
+      "bounds_unity_min": [
+        -0.2552260261895391,
+        -0.09940579337771284,
+        0.14330543013842875
+      ],
+      "bounds_unity_max": [
+        -0.12832601488506518,
+        -0.06408319321227686,
+        0.27020546387768263
+      ]
+    },
+    {
+      "name": "handle_interior",
+      "vertices": 206,
+      "triangles": 72,
+      "bounds_unity_min": [
+        -0.37634336374705263,
+        0.049927961725241325,
+        0.10258033714581985
+      ],
+      "bounds_unity_max": [
+        -0.15861540216537712,
+        0.08800427112984233,
+        0.2680628503015194
+      ]
+    }
+  ],
+  "opaque_porthole_insert_radius_m": 0.145,
+  "projected_aperture_samples": 9285,
+  "projection_misses": 0,
+  "both_sided_backface_culled_projection_checks": [
+    {
+      "view_direction": -1,
+      "samples": 9285,
+      "misses": 0
+    },
+    {
+      "view_direction": 1,
+      "samples": 9285,
+      "misses": 0
+    }
+  ],
+  "physical_colliders_copied": 0,
+  "frame_cutout_tube_animation_copied": false,
+  "source_art_redistributed": false,
+  "scope": "Original model numerical audit; no Unity/PhysX render or gameplay execution."
+}

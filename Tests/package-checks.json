@@ -1,20 +1,38 @@
 {
   "in_game_tested": false,
   "modulemanager_executed": false,
-  "four_internal_patch_blocks": true,
+  "original_internal_patch_blocks": 4,
+  "new_authored_internal_blocks": 2,
+  "pressure_hatches_before_cuts": true,
+  "own_assembly_required": true,
   "post_cut_load_order": true,
-  "no_fixed_door_copy": true,
+  "no_static_duplicate_of_operating_door": true,
   "no_later_visual_cut": true,
   "no_original_seat_removal": true,
   "part_stat_edits_absent": true,
   "local_model_references_resolve": true,
   "unique_models": [
-    "Mk33FreeIVA/Models/CircularHatch",
     "Mk33FreeIVA/Models/CockpitCorridor",
     "Mk33FreeIVA/Models/InteractionPoints",
     "Mk33FreeIVA/Models/KrewAirlockBridge",
-    "Mk33FreeIVA/Models/KrewDockTube"
+    "Mk33FreeIVA/Models/KrewDockPassage",
+    "Mk33FreeIVA/Models/KrewDockTube",
+    "Mk33FreeIVA/Models/NoseDockPassage",
+    "Mk33FreeIVA/Models/ProbeCorePassage"
   ],
   "only_own_runtime_dll": true,
+  "central_airlock_extracted_before_cuts": true,
+  "roof_eva_separate_from_docking": true,
+  "outside_dogleg_and_central_seal_removed": true,
+  "configured_unbuckling_policy": {
+    "Mk33Cockpit": "true",
+    "wbiMk33KrewModule": "true",
+    "wbiMk33Airlock": "true",
+    "wbiControlCab": "true",
+    "Mk33MidTank": "false",
+    "Mk33ProbeCore": "false",
+    "Mk33DockingNoseCone": "false"
+  },
+  "insert_nodes_have_no_pass_specifier": true,
   "source_hash_mismatches": []
 }

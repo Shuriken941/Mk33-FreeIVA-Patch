@@ -1,0 +1,23 @@
+{
+  "in_game_tested": false,
+  "method": "Line/triangle intersections through original selected AIRLOCK door at all four cut corners and a 31x31 interior grid; regression rejects the earlier oversized rectangle. This checks original visible leaf coverage, not PhysX.",
+  "extracted_source_triangles": 352,
+  "aperture_width_metres": 0.6,
+  "aperture_height_metres": 0.7,
+  "actual_leaf_covers_all_four_aperture_corners": true,
+  "corner_ray_distance_metres": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "interior_grid_probes": 961,
+  "maximum_grid_ray_distance_metres": 0.0,
+  "oversized_0_70_by_0_80_corner_ray_distance_metres": [
+    0.06741025802733736,
+    0.0674105828963649,
+    0.06741006862373983,
+    0.0674103379171744
+  ],
+  "oversized_aperture_regression_rejected": true
+}

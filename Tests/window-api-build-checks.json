@@ -1,0 +1,20 @@
+{
+  "pass": true,
+  "in_game_tested": false,
+  "dotnet_sdk": "8.0.426",
+  "language_version": "7.3",
+  "warnings_as_errors": true,
+  "production_source": "Source/Mk33FreeIvaWindowMask.cs",
+  "production_source_sha256": "22115b83d9eb1281637f2dade984548c292e834292fb1c7f924aa7fbde471ab6",
+  "api_references": {
+    "mscorlib.dll": "c0dba617b63143580e708841cbd1b60b45ecc2f6bfcd17c36341653a4a81f96b",
+    "System.dll": "973801a15df7cf551245bc34b6b08702f165cecbbb4b1982076b05239f902140",
+    "System.Core.dll": "dc32674f5e2bb30aae14c5056acd2d9386194fa3a3518e205166ff7157dc913b",
+    "Assembly-CSharp.dll": "64f1719335ab7c7ec572d2e3a4b24736f4b2f53e2d36501c3e1a12a80cc7cd1f",
+    "UnityEngine.dll": "6630045a00890e6f6d6593653c386c36869506cbd314393f2e7321ce4a54a1fe",
+    "UnityEngine.CoreModule.dll": "5e1faa8d96ec1d4fdf7ac5e8baea86936b98bb3544455680f8f3b339d3a6a539",
+    "UnityEngine.PhysicsModule.dll": "7b74005054b3b34fd6cc825707e9715eb826446fc511f2527bf839480d9ba82b",
+    "FreeIva.dll": "7ea03bd7f1ef24897f4e2524283145b1788b5414cacd21ed5d0a3c70fbe79c94"
+  },
+  "scope": "Standalone production window helper compiled against real KSP/Unity/FreeIVA metadata APIs. Complete patch assembly is built separately."
+}

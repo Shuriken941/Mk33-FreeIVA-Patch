@@ -4,7 +4,8 @@ Copyright (c) 2026 Mk33FreeIVA contributors
 
 Applies to the original parametric corridor, bridge, hatch, interaction-point
 and dock-tube models, their generated textures, build_corridors.py,
-build_hatches.py, and validate_corridors.py.
+build_hatches.py, validate_corridors.py, mu_material_table.py, and
+verify_material_semantics.py.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

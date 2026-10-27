@@ -1,11 +1,7 @@
-# Mk33FreeIVA geometry helper source
+# Mk33FreeIVA 0.3.5 source
 
-Build target: Kerbal Space Program 1.12.5 (Unity 2019.4), FreeIVA 0.2.20.2.
-The delivered DLL is compiled against those actual public API reference assemblies,
-not hand-written stand-ins. The reference DLLs are build inputs only and are not
-included in this package.
-
-Linux/macOS with a .NET SDK:
+Build target KSP 1.12.5 / Unity 2019.4 / FreeIVA 0.2.20.2.
+The shipped binary links to actual public API references; no foreign DLL ships.
 
 ```sh
 KSP_MANAGED="/path/to/KSP/KSP_x64_Data/Managed" \
@@ -13,53 +9,52 @@ FREEIVA_DLL="/path/to/KSP/GameData/FreeIva/Plugins/FreeIva.dll" \
 MK33_DOTNET="/path/to/dotnet" bash build.sh
 ```
 
-`build.sh` invokes the SDK C# compiler directly against the KSP framework libraries
-and requires no NuGet restore. `Mk33FreeIVA.csproj` is supplied for IDE use on a
-machine with the .NET Framework 4.8 targeting pack. Both produce the same source
-assembly API; the shipped DLL is built using `build.sh`.
+`build.sh` compiles all three C# files with Roslyn without NuGet restore.
+The csproj provides the same source list for IDE builds.
 
-## Load order and scope
+- `Mk33FreeIvaGeometry`: validates required pressure caps, original doors and
+  authored shells before native source cuts, then constructs matching physical
+  shells. Missing/incomplete shell disables unbuckling on its own part.
+- `Mk33FreeIvaPressureHatch`: direct-INTERNAL classic FreeIVA door rendering over the existing
+  primitive solid plate, persistent click targets, native FreeIVA hatch behavior
+  plus explicit closed initialization and physical-connection/readiness gates.
+- `Mk33FreeIvaAuthoredShell`: validates prebuilt authored shell colliders without
+  duplicating them, then supplies the common complete-shell marker.
+- `Mk33FreeIvaWalkGate`: coordinates per-part readiness blockers and restores
+  only permission disabled by this patch. Pending Awake does not disable seats;
+  final checks run after loading. Configured seatless-part restrictions remain.
+- `Mk33FreeIvaHatch`: adapts original doors, keeps their handles correctly placed,
+  and adds closed-state/connection/readiness validation. The Krew central AIRLOCK
+  door is extracted from cabinMesh with its UV/materials and handles intact. It
+  opens automatically only with a physical, deployed FreeIVA docking connection.
+  The separate roof crewDoor remains bound only to the original EVA airlock.
+  The cockpit lower EXIT handle uses the same adapter for native side-door EVA;
+  the original EXIT wall and door stay physically closed.
+- `Mk33FreeIvaWindowMask`: window-only native depth shader at queue 998, private
+  runtime material, binding and camera-state repair; installed glass is unchanged.
+- `Mk33FreeIvaColliderSetup`: restores nonconvex collision for explicitly named
+  imported passage shells and docking tubes before readiness checks. Trigger,
+  disabled, wrong-layer, missing and empty colliders still fail validation.
+- `generate_patch.py`: current direct-module configuration; no circular PROP placements.
+- `README-visual-assets.md` and `README-nose-passages.md`: model generation.
 
-Place `Mk33FreeIvaGeometry` directly in an `INTERNAL`, before
-`InternalModuleFreeIva`. Repeated `sourceTransform` values select fixed MeshFilters.
-Native FreeIVA `Cut` blocks belong inside this helper. It cuts the installed visual
-meshes first, then creates non-convex, non-trigger layer-16 MeshColliders from the
-result. No art or triangle data is embedded in the plugin.
+Checks (Python 3, NumPy/SciPy/Pillow as required):
 
-Set `shellColliderName = Mk33Shell` in the following `InternalModuleFreeIva`.
-Additional independently authored corridor colliders can be named separately.
-Do not add later FreeIVA `Cut`, automatic hatch cutouts, or moving-door geometry to
-these source lists: late cuts would invalidate the collider snapshot, and a static
-copy of a moving door would block an open hatch. Ordinary hatch door colliders
-remain owned by `FreeIvaHatch`.
+```sh
+python verify_package.py --gamedata /path/to/KSP/GameData
+python verify_kspcf_mu.py
+python source_checks/verify_exported_models.py
+python validate_corridors.py
+python validate_docking_exported.py
+python verify_nose_passages.py
+python verify_v030.py --assets /path/to/Mk-33/Parts/SharedAssets --integration
+python source_checks/validate_other_apertures.py --assets /path/to/Mk-33/Parts/SharedAssets
+python source_checks/validate_window_sources.py /path/to/Mk-33
+MK33_DOTNET=/path/to/dotnet python tests/pressure_runtime/run.py
+```
 
-The marker on the generated root is cloned with the INTERNAL prefab and suppresses
-repeated processing. Full transform matrices bake original mesh vertices into
-internal-local space, preserving non-uniform scale. No source renderer layer,
-exterior collider, part resource, or kerbal collision setting is changed.
+The exact-source behavior harness uses dependency doubles. It does not run Unity,
+PhysX, KSP, ModuleManager or native FreeIVA coroutines. Read its own README and
+Tests/VALIDATION.md for evidence limits. Geometry checks likewise do not prove gameplay.
 
-The helper validates names and configuration before cutting, rejects pre-existing
-solid source colliders, and logs `[Mk33FreeIVA]` errors for failures. A failed
-INTERNAL must not be used for FreeIVA until corrected; errors are not treated as a
-successful compatibility result. FreeIVA's cutter internally catches some cutter
-exceptions, so consult both `[FreeIva]` and `[Mk33FreeIVA]` messages in KSP.log.
-
-`Mk33FreeIvaHatch` is a thin subclass of the native `FreeIvaHatch` for existing
-doors configured directly under INTERNAL. It reads `dockingPortNodeName`,
-`requireDeploy`, `tubeExtent`, and `hideDoorWhenConnected`, which native FreeIVA
-normally reads via a separate per-PROP HatchConfig. All door behavior remains
-native. `position`, `rotation`, `doorTransformName`, `DoorCollider`, and
-`HandleCollider` retain their native meanings. `tubeExtent` is accepted for API
-completeness but FreeIVA 0.2.20.2 does not use it to calculate tube length.
-
-Compilation verifies API compatibility only. Mesh cooking, module load order,
-repeated IVA entry, collision motion, seats and all bidirectional traversal tests
-still require the actual KSP runtime.
-
-Code license: GPL-2.0-or-later. Runtime dependency FreeIVA code is GPLv2; its art is
-not redistributed. Mk-33 installed art remains subject to its own rights.
-
-Build reference source:
-https://github.com/KSPModdingLibs/KSPLibs (KSP-1.12.5.zip, stripped method bodies).
-FreeIVA source and API:
-https://github.com/FirstPersonKSP/FreeIva/tree/0.2.20.2
+Helper/config code GPL-2.0-or-later; authored asset code/art MIT.

@@ -16,6 +16,14 @@
     "vertex_count": 64,
     "triangle_count": 64
   },
+  "KrewDockPassage": {
+    "actual_mu_matches_generated_geometry_json": true,
+    "layer": 16,
+    "convex": false,
+    "isTrigger": false,
+    "vertex_count": 90,
+    "triangle_count": 144
+  },
   "CircularHatch": {
     "closed_door_convex_collider": true,
     "door_layer": 16,

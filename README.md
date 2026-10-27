@@ -6,6 +6,8 @@
 
 > **Current release: V0.3.5.** Core FreeIVA functionality is implemented. Some visual issues and a gravity-related ladder limitation remain.
 
+[V0.3.5 changelog](CHANGELOG.md)
+
 ## Features
 
 - Walk between the Mk-33 cockpit, Krew Module and airlock interiors.
@@ -44,7 +46,7 @@ Please include your KSP, Mk-33 and FreeIVA versions, steps to reproduce, and `KS
 | [THIRD_PARTY.md](THIRD_PARTY.md) | Third-party credits and redistribution notes |
 | [docs](docs/) | Archived V0.1 development documentation |
 
-> **Source version note:** The development files in the `main` branch are the **early V0.1 source snapshot**. They have been reorganized for readability, not updated to match the latest release. For **V0.3.5**, download the release ZIP; do not assume that the source here describes the latest implementation.
+> **Source version:** The `main` branch now contains the sources and assets from the **V0.3.5 release**. For installation use the release ZIP. The original Ukrainian release instructions are at [docs/README-v0.3.5-uk.md](docs/README-v0.3.5-uk.md).
 
 ## Credits and licenses
 

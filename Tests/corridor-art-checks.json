@@ -1,0 +1,125 @@
+{
+  "in_game_tested": false,
+  "scope": "Canonical texture files, texture references, optional complete exported corridor model byte comparison against 0.3.4. Blender previews reviewed separately; no Unity lighting claim.",
+  "textures": {
+    "corridorWall.png": {
+      "sha256": "a8d83df9ce49551b8806c6647be9110c6ce473d8a16704d609f2e24e59a6b11f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "opaque": true,
+      "source_matches": true
+    },
+    "corridorWallWarm.png": {
+      "sha256": "a8d83df9ce49551b8806c6647be9110c6ce473d8a16704d609f2e24e59a6b11f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "opaque": true,
+      "source_matches": true
+    },
+    "corridorFloor.png": {
+      "sha256": "9d672bc5ff7ea205d07d523deaf0215a1b34a7bdf7924d4613121fc21a802a15",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "opaque": true,
+      "source_matches": true
+    },
+    "corridorCeiling.png": {
+      "sha256": "babfcf6127233cdaa8f291ee42c9a61cdc7b73c1203723fbdc30bfb069560605",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "opaque": true,
+      "source_matches": true
+    }
+  },
+  "models": {
+    "CockpitCorridor": {
+      "sha256": "8bd4c65b7e59516660d054e254c8857cdc3579a43f1080e27954a09098d3b102",
+      "texture_references_resolve": true,
+      "textures": [
+        "corridorCeiling",
+        "corridorFloor",
+        "corridorGrey",
+        "corridorLight",
+        "corridorWall",
+        "corridorWallWarm"
+      ],
+      "byte_identical_to_v034": true,
+      "collisions_fixtures_ladders_uvs_native_tube_transforms_unchanged": true
+    },
+    "KrewAirlockBridge": {
+      "sha256": "047e591c842ce76f2c9540e51dfa63342fb69353a45eebfdc61f12e58470e89b",
+      "texture_references_resolve": true,
+      "textures": [
+        "corridorCeiling",
+        "corridorFloor",
+        "corridorWall",
+        "corridorWallWarm"
+      ],
+      "byte_identical_to_v034": true,
+      "collisions_fixtures_ladders_uvs_native_tube_transforms_unchanged": true
+    },
+    "KrewDockPassage": {
+      "sha256": "868c2041be5e4d360aa79c3b1e19e3a1b3f0327fc16eb642889be58f3ce101fc",
+      "texture_references_resolve": true,
+      "textures": [
+        "corridorCeiling",
+        "corridorFloor",
+        "corridorGrey",
+        "corridorLight",
+        "corridorWall",
+        "corridorWallWarm"
+      ],
+      "byte_identical_to_v034": true,
+      "collisions_fixtures_ladders_uvs_native_tube_transforms_unchanged": true
+    },
+    "KrewDockTube": {
+      "sha256": "1eee3789f2f5aa1c9343bf0ded3192234bf1bec9d4d28fef55dcd738800c6f4b",
+      "texture_references_resolve": true,
+      "textures": [
+        "corridorCeiling",
+        "corridorFloor",
+        "corridorGrey",
+        "corridorLight",
+        "corridorWall"
+      ],
+      "byte_identical_to_v034": true,
+      "collisions_fixtures_ladders_uvs_native_tube_transforms_unchanged": true
+    },
+    "ProbeCorePassage": {
+      "sha256": "09f656e317ca65eceaa9ee63fb1a9778dbbc86def01e3bb089c6fde07de67674",
+      "texture_references_resolve": true,
+      "textures": [
+        "corridorCeiling",
+        "corridorFloor",
+        "corridorGrey",
+        "corridorLight",
+        "corridorWall",
+        "corridorWallWarm"
+      ],
+      "byte_identical_to_v034": true,
+      "collisions_fixtures_ladders_uvs_native_tube_transforms_unchanged": true
+    },
+    "NoseDockPassage": {
+      "sha256": "43962d2052eba725370dbb11c59b9fd7853a4ac36673ea3a3db708cbaa9dd367",
+      "texture_references_resolve": true,
+      "textures": [
+        "corridorCeiling",
+        "corridorFloor",
+        "corridorGrey",
+        "corridorLight",
+        "corridorWall",
+        "corridorWallWarm"
+      ],
+      "byte_identical_to_v034": true,
+      "collisions_fixtures_ladders_uvs_native_tube_transforms_unchanged": true
+    }
+  }
+}

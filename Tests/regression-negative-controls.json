@@ -1,0 +1,23 @@
+{
+  "purpose": "Mutation sensitivity checks for independent v034 preservation checker; no production edits",
+  "cases": {
+    "wrong_krew_eva": {
+      "rejected": true,
+      "failures": [
+        "@INTERNAL[wbiMk33CrewModuleSpace]_Mk33FreeIvaHatch_preserved"
+      ]
+    },
+    "wrong_docking_passage": {
+      "rejected": true,
+      "failures": [
+        "@INTERNAL[wbiMk33CrewModuleSpace]_Mk33FreeIvaHatch_preserved"
+      ]
+    },
+    "forced_convex": {
+      "rejected": true,
+      "failures": [
+        "colliders_exact_KrewDockPassage.mu"
+      ]
+    }
+  }
+}

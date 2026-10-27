@@ -1,0 +1,75 @@
+{
+  "source": "/workspace/work/deps/Mk-33/ReleaseFolder/GameData/WildBlueIndustries/Mk-33",
+  "in_game_tested": false,
+  "checks": [
+    {
+      "model": "cockpitIVA",
+      "window_triangles": 240,
+      "window_shader": "KSP/Alpha/Unlit Transparent",
+      "bounds_unity": [
+        [
+          -1.005839943885803,
+          1.3222653335020258,
+          -2.4880484926081587
+        ],
+        [
+          1.0058405399322508,
+          1.7606781573736483,
+          -1.2151488519876972
+        ]
+      ],
+      "aperture_clearance_lower_bound_metres": [
+        1.447565,
+        0.64611,
+        1.436329
+      ],
+      "pass": true
+    },
+    {
+      "model": "crewModuleIVA",
+      "window_triangles": 120,
+      "window_shader": "KSP/Alpha/Unlit Transparent",
+      "bounds_unity": [
+        [
+          -1.1968425683479456,
+          1.8250001146316777,
+          -1.1438661681527522
+        ],
+        [
+          1.196801820964062,
+          1.8250001146316777,
+          -0.15975499005041316
+        ]
+      ],
+      "aperture_clearance_lower_bound_metres": [
+        1.327004,
+        1.701992,
+        0.395301,
+        0.250283,
+        0.285691
+      ],
+      "pass": true
+    },
+    {
+      "model": "controlCabIVA",
+      "window_triangles": 12,
+      "window_shader": "KSP/Alpha/Unlit Transparent",
+      "bounds_unity": [
+        [
+          -0.6000001703113244,
+          -0.6000036373734473,
+          -0.7149969580784693
+        ],
+        [
+          0.6000000978433492,
+          0.5999999642372128,
+          0.6933286878481819
+        ]
+      ],
+      "aperture_clearance_lower_bound_metres": [
+        0.544332
+      ],
+      "pass": true
+    }
+  ]
+}

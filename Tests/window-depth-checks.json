@@ -1,0 +1,148 @@
+{
+  "in_game_tested": false,
+  "gpu_tested": false,
+  "production_source_sha256": "22115b83d9eb1281637f2dade984548c292e834292fb1c7f924aa7fbde471ab6",
+  "native_freeiva_source_sha256": "950e05c265e381df7b1edb5809db7dc784382a76f946fd062fb6533df0a6b6c7",
+  "native_depth_shader_source_sha256": "0475aa3f11b14a7f44a2546d97da39160b7a9166525fc9e9837d45a7792f9f54",
+  "native_occupied_opaque_queue": 999,
+  "native_hull_depth_queue": 1000,
+  "window_only_depth_queue": 998,
+  "native_glass_queue": 1999,
+  "native_other_opaque_queue": 2000,
+  "native_depth_only_shader_statements_verified": [
+    "ColorMask 0",
+    "ZWrite On",
+    "ZTest LEqual",
+    "Cull Back"
+  ],
+  "geometry": [
+    {
+      "internal": "wbiMk33CockpitSpace",
+      "source_model": "cockpitIVA.mu",
+      "source_sha256": "c779c8bc95f9a4e1733a7474615b829ff57edc8399a3151ec9786ae86f0392ec",
+      "source_triangles": 240,
+      "mask_triangles": 480,
+      "source_vertices": 250,
+      "source_surface_area_m2": 1.2005181916119896,
+      "both_windings_verified": true,
+      "all_configured_hatch_apertures_clear": [
+        {
+          "hatch": "CockpitAftEntry",
+          "minimum_distance_from_window_bounds_m": 1.972565333502026,
+          "radius_test_m": 0.525
+        },
+        {
+          "hatch": "CockpitAftExit",
+          "minimum_distance_from_window_bounds_m": 4.216836897434935,
+          "radius_test_m": 0.525
+        },
+        {
+          "hatch": "CockpitNose",
+          "minimum_distance_from_window_bounds_m": 1.961329199813281,
+          "radius_test_m": 0.525
+        },
+        {
+          "hatch": "crewDoor",
+          "minimum_distance_from_window_bounds_m": 1.1711098519876972,
+          "radius_test_m": 0.525
+        },
+        {
+          "hatch": "Mk33CockpitLowerEvaHandle",
+          "minimum_distance_from_window_bounds_m": 2.4786557871228423,
+          "radius_test_m": 0.525
+        }
+      ]
+    },
+    {
+      "internal": "wbiMk33CrewModuleSpace",
+      "source_model": "crewModuleIVA.mu",
+      "source_sha256": "6e98c17c17a15431d5a26ff907825961b335c8fe8992fa33349d4c0a0b446b8c",
+      "source_triangles": 120,
+      "mask_triangles": 240,
+      "source_vertices": 128,
+      "source_surface_area_m2": 1.5152839158492157,
+      "both_windings_verified": true,
+      "all_configured_hatch_apertures_clear": [
+        {
+          "hatch": "KrewForward",
+          "minimum_distance_from_window_bounds_m": 1.8500001146316776,
+          "radius_test_m": 0.525
+        },
+        {
+          "hatch": "KrewAft",
+          "minimum_distance_from_window_bounds_m": 2.2668221147887184,
+          "radius_test_m": 0.525
+        },
+        {
+          "hatch": "Mk33KrewCentralDoor",
+          "minimum_distance_from_window_bounds_m": 0.8106905050984861,
+          "radius_test_m": 0.525
+        },
+        {
+          "hatch": "crewDoor",
+          "minimum_distance_from_window_bounds_m": 0.9203009062015174,
+          "radius_test_m": 0.525
+        }
+      ]
+    },
+    {
+      "internal": "wbiMk33ControlCabSpace",
+      "source_model": "controlCabIVA.mu",
+      "source_sha256": "7f39bfd341cfe34199abbfc6748c927ac233635e58843d02ad5581da7e32dfc5",
+      "source_triangles": 12,
+      "mask_triangles": 24,
+      "source_vertices": 24,
+      "source_surface_area_m2": 4.448825639316119,
+      "both_windings_verified": true,
+      "all_configured_hatch_apertures_clear": [
+        {
+          "hatch": "ControlCabRoof",
+          "minimum_distance_from_window_bounds_m": 1.0443320357627872,
+          "radius_test_m": 0.525
+        }
+      ]
+    }
+  ],
+  "software_depth_composition": [
+    {
+      "case": "Other module behind the window",
+      "expected_color": "external world",
+      "actual_color": "external world",
+      "pass": true
+    },
+    {
+      "case": "An IVA already promoted to queue999 behind the window",
+      "expected_color": "external world",
+      "actual_color": "external world",
+      "pass": true
+    },
+    {
+      "case": "Own interior in front of the window",
+      "expected_color": "own interior",
+      "actual_color": "own interior",
+      "pass": true
+    },
+    {
+      "case": "Open hatch has no window mask",
+      "expected_color": "connected interior",
+      "actual_color": "connected interior",
+      "pass": true
+    },
+    {
+      "case": "Clear view retains the already-rendered external world",
+      "expected_color": "external world",
+      "actual_color": "external world",
+      "pass": true
+    }
+  ],
+  "negative_control_native1000_after_earlier999": {
+    "result": "earlier IVA",
+    "leak_detected": true
+  },
+  "scope_limitations": [
+    "Software depth-buffer model validates ordering logic; it does not execute Unity shader compilation, real cameras, Deferred/Shabby, GPU depth precision, or third-party rendering.",
+    "Installed source window mesh coverage and hatch separation are validated without copying original art into the package.",
+    "The ordering regression is a demonstrated hazard, not proof of the root cause of the user's earlier screenshot.",
+    "KSP gameplay must confirm external-world visibility, seated/unbuckled view, camera transitions and all windows in the user's renderer configuration."
+  ]
+}

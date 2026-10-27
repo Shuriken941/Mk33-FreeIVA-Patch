@@ -195,6 +195,75 @@
           }
         }
       }
+    },
+    "KrewDockPassage": {
+      "topology": {
+        "triangles": 144,
+        "boundary_loops": 2,
+        "boundary_vertex_degrees_all_two": true,
+        "nonmanifold_edges": 0,
+        "boundary_edges": 36,
+        "expected_boundary_loops": 2
+      },
+      "degenerate_triangles": 0,
+      "paths": {
+        "forward": {
+          "body": {
+            "sample_count": 391,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.050000002243042074,
+            "conservative_swept_clearance_lower_bound_metres": 0.04500000224304208,
+            "worst_center": [
+              0.0,
+              1.055827,
+              0.0839419917142857
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .20 height .60"
+          },
+          "helmet_capsule": {
+            "sample_count": 391,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.0500000022430421,
+            "conservative_swept_clearance_lower_bound_metres": 0.045000002243042105,
+            "worst_center": [
+              0.0,
+              1.055827,
+              0.0839419917142857
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .225 height .60"
+          }
+        },
+        "reverse": {
+          "body": {
+            "sample_count": 391,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.050000002243042074,
+            "conservative_swept_clearance_lower_bound_metres": 0.04500000224304208,
+            "worst_center": [
+              0.0,
+              1.055827,
+              0.22304428771428575
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .20 height .60"
+          },
+          "helmet_capsule": {
+            "sample_count": 391,
+            "max_step_metres": 0.005,
+            "min_sampled_clearance_metres": 0.0500000022430421,
+            "conservative_swept_clearance_lower_bound_metres": 0.045000002243042105,
+            "worst_center": [
+              0.0,
+              1.055827,
+              0.22304428771428575
+            ],
+            "clear": true,
+            "shape": "standing capsule radius .225 height .60"
+          }
+        }
+      }
     }
   }
 }

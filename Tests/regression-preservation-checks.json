@@ -1,0 +1,648 @@
+{
+  "scope": "Independent exact exported collider and config comparison against delivered v034; no KSP/Unity/PhysX or ModuleManager execution.",
+  "in_game_tested": false,
+  "baseline": "/workspace/work/v034/GameData/Mk33FreeIVA",
+  "current": "/workspace/work/v035/GameData/Mk33FreeIVA",
+  "failures": [],
+  "checks": {
+    "colliders_exact_CircularHatch.mu": {
+      "pass": true,
+      "details": {
+        "baseline_count": 3,
+        "current_count": 3,
+        "changed_paths": []
+      }
+    },
+    "colliders_exact_CockpitCorridor.mu": {
+      "pass": true,
+      "details": {
+        "baseline_count": 2,
+        "current_count": 2,
+        "changed_paths": []
+      }
+    },
+    "colliders_exact_InteractionPoints.mu": {
+      "pass": true,
+      "details": {
+        "baseline_count": 0,
+        "current_count": 0,
+        "changed_paths": []
+      }
+    },
+    "colliders_exact_KrewAirlockBridge.mu": {
+      "pass": true,
+      "details": {
+        "baseline_count": 1,
+        "current_count": 1,
+        "changed_paths": []
+      }
+    },
+    "colliders_exact_KrewDockPassage.mu": {
+      "pass": true,
+      "details": {
+        "baseline_count": 2,
+        "current_count": 2,
+        "changed_paths": []
+      }
+    },
+    "colliders_exact_KrewDockTube.mu": {
+      "pass": true,
+      "details": {
+        "baseline_count": 2,
+        "current_count": 2,
+        "changed_paths": []
+      }
+    },
+    "colliders_exact_NoseDockPassage.mu": {
+      "pass": true,
+      "details": {
+        "baseline_count": 2,
+        "current_count": 2,
+        "changed_paths": []
+      }
+    },
+    "colliders_exact_ProbeCorePassage.mu": {
+      "pass": true,
+      "details": {
+        "baseline_count": 1,
+        "current_count": 1,
+        "changed_paths": []
+      }
+    },
+    "new_models_no_physical_colliders": {
+      "pass": true,
+      "details": {}
+    },
+    "existing_config_node_@PART[Mk33Cockpit]": {
+      "pass": true,
+      "details": null
+    },
+    "part_settings_exact_@PART[Mk33Cockpit]": {
+      "pass": true,
+      "details": null
+    },
+    "existing_config_node_@PART[wbiMk33KrewModule]": {
+      "pass": true,
+      "details": null
+    },
+    "part_settings_exact_@PART[wbiMk33KrewModule]": {
+      "pass": true,
+      "details": null
+    },
+    "existing_config_node_@PART[wbiMk33Airlock]": {
+      "pass": true,
+      "details": null
+    },
+    "part_settings_exact_@PART[wbiMk33Airlock]": {
+      "pass": true,
+      "details": null
+    },
+    "existing_config_node_@PART[wbiControlCab]": {
+      "pass": true,
+      "details": null
+    },
+    "part_settings_exact_@PART[wbiControlCab]": {
+      "pass": true,
+      "details": null
+    },
+    "existing_config_node_@PART[Mk33MidTank]": {
+      "pass": true,
+      "details": null
+    },
+    "part_settings_exact_@PART[Mk33MidTank]": {
+      "pass": true,
+      "details": null
+    },
+    "existing_config_node_@INTERNAL[wbiMk33CockpitSpace]": {
+      "pass": true,
+      "details": null
+    },
+    "@INTERNAL[wbiMk33CockpitSpace]_Mk33FreeIvaPressureHatch_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 3,
+        "current_count": 3
+      }
+    },
+    "@INTERNAL[wbiMk33CockpitSpace]_Mk33FreeIvaHatch_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 1,
+        "current_count": 2
+      }
+    },
+    "@INTERNAL[wbiMk33CockpitSpace]_HandRail_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 2,
+        "current_count": 2
+      }
+    },
+    "@INTERNAL[wbiMk33CockpitSpace]_Mk33FreeIvaAuthoredShell_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 0,
+        "current_count": 0
+      }
+    },
+    "@INTERNAL[wbiMk33CockpitSpace]_source_shell_and_cuts_preserved": {
+      "pass": true,
+      "details": null
+    },
+    "@INTERNAL[wbiMk33CockpitSpace]_native_shell_bindings_preserved": {
+      "pass": true,
+      "details": {
+        "baseline": [
+          "Mk33Shell",
+          "Mk33CorridorShell"
+        ],
+        "current": [
+          "Mk33Shell",
+          "Mk33CorridorShell"
+        ]
+      }
+    },
+    "existing_config_node_@INTERNAL[wbiMk33CrewModuleSpace]": {
+      "pass": true,
+      "details": null
+    },
+    "@INTERNAL[wbiMk33CrewModuleSpace]_Mk33FreeIvaPressureHatch_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 2,
+        "current_count": 2
+      }
+    },
+    "@INTERNAL[wbiMk33CrewModuleSpace]_Mk33FreeIvaHatch_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 2,
+        "current_count": 2
+      }
+    },
+    "@INTERNAL[wbiMk33CrewModuleSpace]_HandRail_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 1,
+        "current_count": 1
+      }
+    },
+    "@INTERNAL[wbiMk33CrewModuleSpace]_Mk33FreeIvaAuthoredShell_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 0,
+        "current_count": 0
+      }
+    },
+    "@INTERNAL[wbiMk33CrewModuleSpace]_source_shell_and_cuts_preserved": {
+      "pass": true,
+      "details": null
+    },
+    "@INTERNAL[wbiMk33CrewModuleSpace]_native_shell_bindings_preserved": {
+      "pass": true,
+      "details": {
+        "baseline": [
+          "Mk33Shell",
+          "Mk33KrewAirlockBridgeShell",
+          "Mk33KrewDockPassageShell"
+        ],
+        "current": [
+          "Mk33Shell",
+          "Mk33KrewAirlockBridgeShell",
+          "Mk33KrewDockPassageShell"
+        ]
+      }
+    },
+    "existing_config_node_@INTERNAL[wbiMk33AirlockSpace]": {
+      "pass": true,
+      "details": null
+    },
+    "@INTERNAL[wbiMk33AirlockSpace]_Mk33FreeIvaPressureHatch_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 3,
+        "current_count": 3
+      }
+    },
+    "@INTERNAL[wbiMk33AirlockSpace]_Mk33FreeIvaHatch_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 0,
+        "current_count": 0
+      }
+    },
+    "@INTERNAL[wbiMk33AirlockSpace]_HandRail_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 2,
+        "current_count": 2
+      }
+    },
+    "@INTERNAL[wbiMk33AirlockSpace]_Mk33FreeIvaAuthoredShell_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 0,
+        "current_count": 0
+      }
+    },
+    "@INTERNAL[wbiMk33AirlockSpace]_source_shell_and_cuts_preserved": {
+      "pass": true,
+      "details": null
+    },
+    "@INTERNAL[wbiMk33AirlockSpace]_native_shell_bindings_preserved": {
+      "pass": true,
+      "details": {
+        "baseline": [
+          "Mk33Shell"
+        ],
+        "current": [
+          "Mk33Shell"
+        ]
+      }
+    },
+    "existing_config_node_@INTERNAL[wbiMk33ControlCabSpace]": {
+      "pass": true,
+      "details": null
+    },
+    "@INTERNAL[wbiMk33ControlCabSpace]_Mk33FreeIvaPressureHatch_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 1,
+        "current_count": 1
+      }
+    },
+    "@INTERNAL[wbiMk33ControlCabSpace]_Mk33FreeIvaHatch_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 0,
+        "current_count": 0
+      }
+    },
+    "@INTERNAL[wbiMk33ControlCabSpace]_HandRail_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 1,
+        "current_count": 1
+      }
+    },
+    "@INTERNAL[wbiMk33ControlCabSpace]_Mk33FreeIvaAuthoredShell_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 0,
+        "current_count": 0
+      }
+    },
+    "@INTERNAL[wbiMk33ControlCabSpace]_source_shell_and_cuts_preserved": {
+      "pass": true,
+      "details": null
+    },
+    "@INTERNAL[wbiMk33ControlCabSpace]_native_shell_bindings_preserved": {
+      "pass": true,
+      "details": {
+        "baseline": [
+          "Mk33Shell"
+        ],
+        "current": [
+          "Mk33Shell"
+        ]
+      }
+    },
+    "existing_config_node_@PART[Mk33ProbeCore]": {
+      "pass": true,
+      "details": null
+    },
+    "part_settings_exact_@PART[Mk33ProbeCore]": {
+      "pass": true,
+      "details": null
+    },
+    "existing_config_node_@PART[Mk33DockingNoseCone]": {
+      "pass": true,
+      "details": null
+    },
+    "part_settings_exact_@PART[Mk33DockingNoseCone]": {
+      "pass": true,
+      "details": null
+    },
+    "existing_config_node_INTERNAL[Mk33FreeIVA_ProbeCoreSpace]": {
+      "pass": true,
+      "details": null
+    },
+    "INTERNAL[Mk33FreeIVA_ProbeCoreSpace]_Mk33FreeIvaPressureHatch_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 2,
+        "current_count": 2
+      }
+    },
+    "INTERNAL[Mk33FreeIVA_ProbeCoreSpace]_Mk33FreeIvaHatch_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 0,
+        "current_count": 0
+      }
+    },
+    "INTERNAL[Mk33FreeIVA_ProbeCoreSpace]_HandRail_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 0,
+        "current_count": 0
+      }
+    },
+    "INTERNAL[Mk33FreeIVA_ProbeCoreSpace]_Mk33FreeIvaAuthoredShell_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 1,
+        "current_count": 1
+      }
+    },
+    "INTERNAL[Mk33FreeIVA_ProbeCoreSpace]_native_shell_bindings_preserved": {
+      "pass": true,
+      "details": {
+        "baseline": [
+          "Mk33ProbeCoreShell"
+        ],
+        "current": [
+          "Mk33ProbeCoreShell"
+        ]
+      }
+    },
+    "existing_config_node_INTERNAL[Mk33FreeIVA_NoseDockSpace]": {
+      "pass": true,
+      "details": null
+    },
+    "INTERNAL[Mk33FreeIVA_NoseDockSpace]_Mk33FreeIvaPressureHatch_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 2,
+        "current_count": 2
+      }
+    },
+    "INTERNAL[Mk33FreeIVA_NoseDockSpace]_Mk33FreeIvaHatch_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 0,
+        "current_count": 0
+      }
+    },
+    "INTERNAL[Mk33FreeIVA_NoseDockSpace]_HandRail_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 0,
+        "current_count": 0
+      }
+    },
+    "INTERNAL[Mk33FreeIVA_NoseDockSpace]_Mk33FreeIvaAuthoredShell_preserved": {
+      "pass": true,
+      "details": {
+        "baseline_count": 1,
+        "current_count": 1
+      }
+    },
+    "INTERNAL[Mk33FreeIVA_NoseDockSpace]_native_shell_bindings_preserved": {
+      "pass": true,
+      "details": {
+        "baseline": [
+          "Mk33NoseDockShell"
+        ],
+        "current": [
+          "Mk33NoseDockShell"
+        ]
+      }
+    },
+    "all_part_selectors_preserved": {
+      "pass": true,
+      "details": null
+    },
+    "core_class_exact_Mk33FreeIvaConnection": {
+      "pass": true,
+      "details": {
+        "baseline_sha256": "484b5b0c7ace8e990a4528f7167152881e105f82e4ea5d85a5720ddd54c4fed8",
+        "current_sha256": "484b5b0c7ace8e990a4528f7167152881e105f82e4ea5d85a5720ddd54c4fed8"
+      }
+    },
+    "core_class_exact_Mk33FreeIvaAuthoredShell": {
+      "pass": true,
+      "details": {
+        "baseline_sha256": "a8364407ca800fdc039140078674803fde15647f14ca844088a514a5f71bbd1c",
+        "current_sha256": "a8364407ca800fdc039140078674803fde15647f14ca844088a514a5f71bbd1c"
+      }
+    },
+    "core_class_exact_Mk33FreeIvaColliderSetup": {
+      "pass": true,
+      "details": {
+        "baseline_sha256": "4a99fc0f630195748b03ef623d1426f921f70a27be6a7603a82e4dfca24d9d87",
+        "current_sha256": "4a99fc0f630195748b03ef623d1426f921f70a27be6a7603a82e4dfca24d9d87"
+      }
+    },
+    "core_class_exact_Mk33FreeIvaWalkGate": {
+      "pass": true,
+      "details": {
+        "baseline_sha256": "ebdf3ecfb51db8d992f8e3ffc4c30dca50c3446f3908de1c7af83f39a19cfd4a",
+        "current_sha256": "ebdf3ecfb51db8d992f8e3ffc4c30dca50c3446f3908de1c7af83f39a19cfd4a"
+      }
+    }
+  },
+  "baseline_collider_manifest": {
+    "CircularHatch.mu": {
+      "Mk33CircularHatch/door": {
+        "sha256": "33e97d74dab90cc3b069b27fd3c76d82803e97f75b0ade3674504d57424c20a8",
+        "type": "MuColliderMesh",
+        "layer": 16,
+        "is_trigger": false,
+        "vertices": 66,
+        "triangles": 128
+      },
+      "Mk33CircularHatch/handleInside": {
+        "sha256": "cfa83956d740aebb97fb48e4f7f9ce35abc4f9c4e56c0bfb2aaa43f2ee7f1ed0",
+        "type": "MuColliderBox",
+        "layer": 20,
+        "is_trigger": false,
+        "vertices": null,
+        "triangles": null
+      },
+      "Mk33CircularHatch/handleOutside": {
+        "sha256": "3405f02b91fc1d9a55dd6ccdfda9e74438b61b2b905c04f39e71687e89bff632",
+        "type": "MuColliderBox",
+        "layer": 20,
+        "is_trigger": false,
+        "vertices": null,
+        "triangles": null
+      }
+    },
+    "CockpitCorridor.mu": {
+      "Mk33CockpitCorridor/Mk33CorridorShell": {
+        "sha256": "a1405adc5accedae3a87936480d1f83788aea11fa3272aa56cab5d15e06a2fbe",
+        "type": "MuColliderMesh",
+        "layer": 16,
+        "is_trigger": false,
+        "vertices": 99,
+        "triangles": 132
+      },
+      "Mk33CockpitCorridor/Mk33AccessRail": {
+        "sha256": "e868c872c7dc4ced78beb3af5091d158218d21783671dbb97ae4bcd88454b684",
+        "type": "MuColliderBox",
+        "layer": 16,
+        "is_trigger": true,
+        "vertices": null,
+        "triangles": null
+      }
+    },
+    "InteractionPoints.mu": {},
+    "KrewAirlockBridge.mu": {
+      "Mk33KrewAirlockBridge/Mk33KrewAirlockBridgeShell": {
+        "sha256": "67ab0b46c29af6a8a84e17e8a89f30f9923bde8e220073d06c1d63c752e82d67",
+        "type": "MuColliderMesh",
+        "layer": 16,
+        "is_trigger": false,
+        "vertices": 64,
+        "triangles": 64
+      }
+    },
+    "KrewDockPassage.mu": {
+      "Mk33KrewDockPassage/Mk33KrewDockPassageShell": {
+        "sha256": "0a1a6462797e27f7f4be11ae5a2e2c689cff1d4c316d9d3e3b6c4de7007e035f",
+        "type": "MuColliderMesh",
+        "layer": 16,
+        "is_trigger": false,
+        "vertices": 90,
+        "triangles": 144
+      },
+      "Mk33KrewDockPassage/Mk33KrewDockAccessLadder": {
+        "sha256": "5bdc92148ea3704a8c55e2d3e0d9801fb4cefd30d887f39adc0834e4de2b6e12",
+        "type": "MuColliderBox",
+        "layer": 16,
+        "is_trigger": true,
+        "vertices": null,
+        "triangles": null
+      }
+    },
+    "KrewDockTube.mu": {
+      "Mk33KrewDockTubeModel/Mk33KrewDockTubeRoot/Mk33KrewDockTube": {
+        "sha256": "24a397e03da5501b314578644c9275d601a6ac87da033b67de0dea751e184a5e",
+        "type": "MuColliderMesh",
+        "layer": 16,
+        "is_trigger": false,
+        "vertices": 64,
+        "triangles": 64
+      },
+      "Mk33KrewDockTubeModel/Mk33KrewDockTubeRoot/Mk33KrewDockTube/Mk33DockLadder": {
+        "sha256": "ca6e1513ac83b55451cc67db1f41a5cbc6d1873af2943fb58a938260c4ebc883",
+        "type": "MuColliderBox",
+        "layer": 16,
+        "is_trigger": true,
+        "vertices": null,
+        "triangles": null
+      }
+    },
+    "NoseDockPassage.mu": {
+      "Mk33NoseDockPassage/Mk33NoseDockShell": {
+        "sha256": "9d2077198965f64a07555b77464215bc5f87de9320f783aa71c99b5ced8fdcc6",
+        "type": "MuColliderMesh",
+        "layer": 16,
+        "is_trigger": false,
+        "vertices": 64,
+        "triangles": 64
+      },
+      "Mk33NoseDockPassage/Mk33NoseDockTube": {
+        "sha256": "18414b492fc31afe3febb73bcc6b995bac9aceef773a6126e16252d6694c2d3f",
+        "type": "MuColliderMesh",
+        "layer": 16,
+        "is_trigger": false,
+        "vertices": 64,
+        "triangles": 64
+      }
+    },
+    "ProbeCorePassage.mu": {
+      "Mk33ProbeCorePassage/Mk33ProbeCoreShell": {
+        "sha256": "b73302b292666c496737db09f9d117345ee941b7e5581a53a45e020146661876",
+        "type": "MuColliderMesh",
+        "layer": 16,
+        "is_trigger": false,
+        "vertices": 64,
+        "triangles": 64
+      }
+    }
+  },
+  "intentional_window_changes": {
+    "@INTERNAL[wbiMk33CockpitSpace]": {
+      "module_changed": false,
+      "native_mask_fields_changed": false
+    },
+    "@INTERNAL[wbiMk33CrewModuleSpace]": {
+      "module_changed": false,
+      "native_mask_fields_changed": false
+    },
+    "@INTERNAL[wbiMk33AirlockSpace]": {
+      "module_changed": false,
+      "native_mask_fields_changed": false
+    },
+    "@INTERNAL[wbiMk33ControlCabSpace]": {
+      "module_changed": false,
+      "native_mask_fields_changed": false
+    },
+    "INTERNAL[Mk33FreeIVA_ProbeCoreSpace]": {
+      "module_changed": false,
+      "native_mask_fields_changed": false
+    },
+    "INTERNAL[Mk33FreeIVA_NoseDockSpace]": {
+      "module_changed": false,
+      "native_mask_fields_changed": false
+    }
+  },
+  "file_changes": [
+    "README.md",
+    "Mk33FreeIVA.version",
+    "CHANGELOG.md",
+    "THIRD_PARTY.md",
+    "Patches/Mk33_FreeIVA.cfg",
+    "Tests/window-depth-checks.json",
+    "Tests/classic-hatch-asset-checks.json",
+    "Tests/native-docking-config-checks.json",
+    "Tests/native-cutter-algorithm-checks.json",
+    "Tests/window-runtime-checks.json",
+    "Tests/corridor-art-checks.json",
+    "Tests/window-api-build-checks.json",
+    "Tests/regression-negative-controls.json",
+    "Tests/independent-review.json",
+    "Tests/pressure-runtime-checks.json",
+    "Tests/window-source-checks.json",
+    "Tests/instructions.md",
+    "Tests/VALIDATION.md",
+    "Tests/cockpit-eva-checks.json",
+    "Plugins/Mk33FreeIVA.dll",
+    "Source/material_sources.json",
+    "Source/verify_corridor_art.py",
+    "Source/build_materials.py",
+    "Source/Mk33FreeIvaGeometry.cs",
+    "Source/README-cockpit-eva.md",
+    "Source/README-classic-hatches.md",
+    "Source/README.md",
+    "Source/Mk33FreeIvaWindowMask.cs",
+    "Source/README-visual-assets.md",
+    "Source/generate_patch.py",
+    "Source/build_corridors.py",
+    "Source/README-helper.md",
+    "Source/Mk33FreeIvaPressureHatch.cs",
+    "Models/corridorWall.png",
+    "Models/corridorWallWarm.png",
+    "Models/corridorFloor.png",
+    "Models/corridorCeiling.png",
+    "Tests/Previews/corridor-preview.png",
+    "Tests/Previews/shaft-preview.png",
+    "Tests/Previews/README.md",
+    "Tests/Previews/krew-preview.png",
+    "Source/source_checks/verify_cockpit_eva.py",
+    "Source/source_checks/verify_window_depth.py",
+    "Source/source_checks/verify_classic_hatch.py",
+    "Source/source_checks/validate_window_sources.py",
+    "Source/source_checks/verify_preservation.py",
+    "Source/tests/window_runtime/Program.cs",
+    "Source/tests/window_runtime/README.md",
+    "Source/tests/window_runtime/run.py",
+    "Source/tests/window_runtime/Stubs.cs",
+    "Source/tests/pressure_runtime/Program.cs",
+    "Source/tests/pressure_runtime/README.md",
+    "Source/tests/pressure_runtime/Stubs.cs"
+  ],
+  "pass": true
+}

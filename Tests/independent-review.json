@@ -1,0 +1,46 @@
+{
+  "in_game_tested": false,
+  "ksp_unity_physx_executed": false,
+  "reviewed_artifact": "private v035 snapshot from current sources",
+  "source_snapshot_sha256": {
+    "Source/Mk33FreeIvaGeometry.cs": "7478ebb058b4f0ae80de7075e92b6e93b7dc8a5a0dbcd209eee889f0e9af3e85",
+    "Source/Mk33FreeIvaWindowMask.cs": "22115b83d9eb1281637f2dade984548c292e834292fb1c7f924aa7fbde471ab6",
+    "Source/Mk33FreeIvaPressureHatch.cs": "649a70a0eafb8b7296c4c2e40c1f65bb2adfb904d6e631a171521fc5f0792f69",
+    "Patches/Mk33_FreeIVA.cfg": "ecfb8e13a623d032e4f1e3de0d7c60fd65614adaea8cb1cc170d83e1bfbafca9"
+  },
+  "source_current_matches_snapshot": {
+    "Source/Mk33FreeIvaGeometry.cs": true,
+    "Source/Mk33FreeIvaWindowMask.cs": true,
+    "Source/Mk33FreeIvaPressureHatch.cs": true,
+    "Patches/Mk33_FreeIVA.cfg": true
+  },
+  "actual_api_compile": {
+    "pass": true,
+    "references": "KSP1.12.5 stripped API metadata + actual FreeIVA0.2.20.2 DLL",
+    "dll_sha256": "b05af613530950f007cf1cef15122d353f51770dbc82ddc10f2a38951ab458ee"
+  },
+  "runtime_dependency_double_checks": {
+    "pressure": 101,
+    "windows": 30
+  },
+  "independent_preservation_checks": {
+    "count": 68,
+    "pass": true,
+    "negative_controls_rejected": 3
+  },
+  "review_findings": [
+    "No confirmed blocker found in reviewed source/configuration.",
+    "All original exported collider vertices, triangles, poses and flags match delivered v034 exactly; native part patches and original hatch bindings/cuts preserved.",
+    "Native mask shader queue1000 follows promoted occupied-IVA opaque queue999. New window-only queue998 precedes it. Dedicated private material is installed after native load, avoids changing global native material and is repaired during runtime lifecycle.",
+    "Window helper uses only original window triangles, restores native mode activation rule, leaves external depthmask untouched and has no physical colliders. Missing shader safely hides only extra renderer and retries.",
+    "Classic hatch copies only original leaf and two handle mesh renderers from FreeIVA. It imports no source collider, cutout, tube, animation or config. All new art and center insert are below existing pressureDoor, so parent deactivation removes them on open.",
+    "Classic art source meshes/materials are read-only; the original deterministic full pressure BoxCollider remains. Render backing shrinks only after full successful art copy; optional visual failure leaves original full opaque fallback.",
+    "New lower cockpit EVA action extracts only 104 handle triangles, leaves door wall closed, binds original Airlock,0 and uses native FreeIVA GoEVA semantics including obstruction/tourist checks. It creates no unsupported through-vacuum portal.",
+    "Independent exact source builds and dependency-double executions passed. Window source/aperture/shader-contract audit and lower-EVA source/geometry audit passed."
+  ],
+  "remaining_validation_limits": [
+    "No real KSP, Unity camera compositing, deferred GPU rendering, native actual docking discovery/coroutines, PhysX or full installed ModuleManager patch stack was run.",
+    "Actual EVA spawn obstruction, visual texture presentation and all in-game transitions still need user gameplay validation.",
+    "Comparison proves baseline functional geometry/settings preservation and guarded-code behavior, not absence of all gameplay bugs."
+  ]
+}

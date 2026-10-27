@@ -1,0 +1,100 @@
+{
+  "in_game_tested": false,
+  "original_model_snapshot": "Mk-33 1.3.3.0",
+  "original_model_sha256": {
+    "crewModuleIVA.mu": "6e98c17c17a15431d5a26ff907825961b335c8fe8992fa33349d4c0a0b446b8c",
+    "krewModule.mu": "63bf6c0de829a2386bdfdeb6281ac4fb741e6f4cd034bd2c0d7f2a2286dbff4d"
+  },
+  "actual_airlock_door": {
+    "source": "cabinMesh",
+    "leaf_connected_triangles": 224,
+    "leaf_bounds_iva_metres": [
+      [
+        -0.3379394636399487,
+        0.676003119269078,
+        0.07385301885474332
+      ],
+      [
+        0.33793974659367654,
+        1.435650488653866,
+        0.11885520757250181
+      ]
+    ],
+    "detached_leaf_and_handle_triangles": 352,
+    "source_selection_bounds_iva_metres": [
+      [
+        -0.34,
+        0.67,
+        0.02
+      ],
+      [
+        0.34,
+        1.44,
+        0.125
+      ]
+    ],
+    "entry_direction_iva": [
+      0,
+      0,
+      1
+    ],
+    "docking_axis_iva_xz": [
+      0,
+      0.61551148
+    ]
+  },
+  "neighboring_exterior_hatch": {
+    "source": "crewDoor",
+    "position_iva_metres": [
+      1.11892979,
+      1.828301668,
+      0.76053953
+    ],
+    "physical_eva_opening_predates_patch": true,
+    "docking_binding_removed": true,
+    "outside_dogleg_removed": true,
+    "original_eva_operation_preserved": true
+  },
+  "corrected_static_route": {
+    "bounds_iva_metres": [
+      [
+        -0.38999998569488525,
+        0.6499999761581421,
+        0.07999998331069946
+      ],
+      [
+        0.38999998569488525,
+        1.7999999523162842,
+        1.0055115222930908
+      ]
+    ],
+    "roof_outlet_y": 1.8,
+    "original_central_shaft_top_y": 1.8203555,
+    "central_shaft_source_bounds_iva_metres": [
+      [
+        -0.5249993757087797,
+        0.6250001359500402,
+        0.09051922430869969
+      ],
+      [
+        0.5250008353337474,
+        1.8203554955496422,
+        1.1405194428016803
+      ]
+    ],
+    "front_entry_width_metres": 0.6,
+    "front_entry_height_metres": 0.7,
+    "native_tube_radius_metres": 0.39,
+    "original_docking_port_lip_inner_radius_approx_metres": 0.3989,
+    "model_sha256": {
+      "KrewDockPassage.mu": "868c2041be5e4d360aa79c3b1e19e3a1b3f0327fc16eb642889be58f3ce101fc",
+      "KrewDockTube.mu": "1eee3789f2f5aa1c9343bf0ded3192234bf1bec9d4d28fef55dcd738800c6f4b"
+    },
+    "unrelated_original_authored_models_preserved": {
+      "CockpitCorridor.mu": true,
+      "KrewAirlockBridge.mu": true,
+      "CircularHatch.mu": true,
+      "InteractionPoints.mu": true
+    }
+  }
+}

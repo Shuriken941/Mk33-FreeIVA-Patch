@@ -1,0 +1,29 @@
+{
+  "in_game_tested": false,
+  "scope": "Source triangle projection geometry only; independent of Unity rendering/PhysX. Does not measure a gas simulation.",
+  "selected_original_door_and_handle_triangles": 352,
+  "door_leaf_triangles": 224,
+  "projected_hull_area_m2": 0.5031502799507803,
+  "front_triangle_projection_area_m2": 0.5031502799507804,
+  "maximum_pairwise_front_triangle_overlap_area_m2": 2.7755575615628914e-17,
+  "projected_front_exactly_tiles_convex_leaf_hull": true,
+  "aperture_checks": {
+    "0.70x0.80": {
+      "full_rectangle_inside_opaque_leaf_projection": false,
+      "minimum_projected_leaf_overlap_m": -0.0673700224393512
+    },
+    "0.66x0.74": {
+      "full_rectangle_inside_opaque_leaf_projection": false,
+      "minimum_projected_leaf_overlap_m": -0.03264135458859019
+    },
+    "0.60x0.70": {
+      "full_rectangle_inside_opaque_leaf_projection": true,
+      "minimum_projected_leaf_overlap_m": 0.0031432672839242226
+    }
+  },
+  "current_cfg_matches_proved_aperture": true,
+  "primitive_seal_aperture_overlap_m": {
+    "left_right": 0.037939500000000015,
+    "top_bottom": 0.029823500000000003
+  }
+}

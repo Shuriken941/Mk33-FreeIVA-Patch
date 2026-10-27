@@ -27,19 +27,6 @@
         "clear": true
       }
     },
-    "krew_roof": {
-      "roof": {
-        "samples": 226,
-        "clearance_lower_bound_m": 0.1173020298930418,
-        "nearest_mesh": "cabinMesh",
-        "worst_center": [
-          1.11893,
-          -0.1,
-          0.76054
-        ],
-        "clear": true
-      }
-    },
     "control_cab_roof": {
       "roof": {
         "samples": 136,

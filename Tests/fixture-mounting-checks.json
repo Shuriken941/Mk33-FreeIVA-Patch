@@ -1,0 +1,454 @@
+{
+  "in_game_tested": false,
+  "method": "Decode shipped .mu triangles; sample fixture back faces against actual pressure skin; compute ladder contact graph and swept capsule clearance including render-only hardware.",
+  "fixtures": {
+    "CockpitCorridor/Mk33CeilingFixture0Housing": {
+      "mounting_back_triangles": 8,
+      "sampled_back_points": 56,
+      "minimum_gap_metres": 0.0009851634025559797,
+      "maximum_gap_metres": 0.0009898493171217693,
+      "attached": true,
+      "mesh_contact_distance_metres": 0.0,
+      "housing_mesh_intersects_or_touches_skin": true
+    },
+    "CockpitCorridor/Mk33CeilingFixture1Housing": {
+      "mounting_back_triangles": 8,
+      "sampled_back_points": 56,
+      "minimum_gap_metres": 0.0009851547940917143,
+      "maximum_gap_metres": 0.0009898457769540586,
+      "attached": true,
+      "mesh_contact_distance_metres": 0.0,
+      "housing_mesh_intersects_or_touches_skin": true
+    },
+    "CockpitCorridor/Mk33CeilingFixture2Housing": {
+      "mounting_back_triangles": 8,
+      "sampled_back_points": 56,
+      "minimum_gap_metres": 0.0009851367232823931,
+      "maximum_gap_metres": 0.000989803722526293,
+      "attached": true,
+      "mesh_contact_distance_metres": 0.0,
+      "housing_mesh_intersects_or_touches_skin": true
+    },
+    "CockpitCorridor/Mk33CeilingFixture3Housing": {
+      "mounting_back_triangles": 8,
+      "sampled_back_points": 56,
+      "minimum_gap_metres": 0.000985143066285364,
+      "maximum_gap_metres": 0.0009898127745335582,
+      "attached": true,
+      "mesh_contact_distance_metres": 0.0,
+      "housing_mesh_intersects_or_touches_skin": true
+    },
+    "CockpitCorridor/Mk33CeilingFixture4Housing": {
+      "mounting_back_triangles": 8,
+      "sampled_back_points": 56,
+      "minimum_gap_metres": 0.0009851377503403056,
+      "maximum_gap_metres": 0.0009898314489872858,
+      "attached": true,
+      "mesh_contact_distance_metres": 0.0,
+      "housing_mesh_intersects_or_touches_skin": true
+    },
+    "CockpitCorridor/Mk33CeilingFixture5Housing": {
+      "mounting_back_triangles": 8,
+      "sampled_back_points": 56,
+      "minimum_gap_metres": 0.001000046730041504,
+      "maximum_gap_metres": 0.001000046730041504,
+      "attached": true,
+      "mesh_contact_distance_metres": 0.0,
+      "housing_mesh_intersects_or_touches_skin": true
+    },
+    "CockpitCorridor/Mk33CeilingFixture0Lens": {
+      "contact_with_housing_gap_metres": 0.001970354239018906
+    },
+    "CockpitCorridor/Mk33CeilingFixture1Lens": {
+      "contact_with_housing_gap_metres": 0.0019703541349351803
+    },
+    "CockpitCorridor/Mk33CeilingFixture2Lens": {
+      "contact_with_housing_gap_metres": 0.0019703542606750667
+    },
+    "CockpitCorridor/Mk33CeilingFixture3Lens": {
+      "contact_with_housing_gap_metres": 0.0019703470618223262
+    },
+    "CockpitCorridor/Mk33CeilingFixture4Lens": {
+      "contact_with_housing_gap_metres": 0.0019703470954023582
+    },
+    "CockpitCorridor/Mk33CeilingFixture5Lens": {
+      "contact_with_housing_gap_metres": 0.001999974250793457
+    },
+    "KrewDockPassage/Mk33KrewPassageFixture0Housing": {
+      "mounting_back_triangles": 8,
+      "sampled_back_points": 56,
+      "minimum_gap_metres": 0.0009951452672023284,
+      "maximum_gap_metres": 0.001000046730041504,
+      "attached": true,
+      "mesh_contact_distance_metres": 0.0,
+      "housing_mesh_intersects_or_touches_skin": true
+    },
+    "KrewDockPassage/Mk33KrewPassageFixture1Housing": {
+      "mounting_back_triangles": 8,
+      "sampled_back_points": 56,
+      "minimum_gap_metres": 0.0009951452672023284,
+      "maximum_gap_metres": 0.001000046730041504,
+      "attached": true,
+      "mesh_contact_distance_metres": 0.0,
+      "housing_mesh_intersects_or_touches_skin": true
+    },
+    "KrewDockPassage/Mk33KrewPassageFixture0Lens": {
+      "contact_with_housing_gap_metres": 0.0019903437229997693
+    },
+    "KrewDockPassage/Mk33KrewPassageFixture1Lens": {
+      "contact_with_housing_gap_metres": 0.0019903437229997693
+    },
+    "KrewDockTube/Mk33DockFixture0Housing": {
+      "mounting_back_triangles": 8,
+      "sampled_back_points": 56,
+      "minimum_gap_metres": 0.0009951878489258984,
+      "maximum_gap_metres": 0.0010000169277191162,
+      "attached": true,
+      "mesh_contact_distance_metres": 0.0,
+      "housing_mesh_intersects_or_touches_skin": true
+    },
+    "KrewDockTube/Mk33DockFixture1Housing": {
+      "mounting_back_triangles": 8,
+      "sampled_back_points": 56,
+      "minimum_gap_metres": 0.0009951878489258984,
+      "maximum_gap_metres": 0.0010000169277191162,
+      "attached": true,
+      "mesh_contact_distance_metres": 0.0,
+      "housing_mesh_intersects_or_touches_skin": true
+    },
+    "KrewDockTube/Mk33DockFixture0Lens": {
+      "contact_with_housing_gap_metres": 0.0019903438765419036
+    },
+    "KrewDockTube/Mk33DockFixture1Lens": {
+      "contact_with_housing_gap_metres": 0.0019903438765418767
+    },
+    "ProbeCorePassage/Mk33ProbeFixture0_Housing": {
+      "mounting_back_triangles": 8,
+      "sampled_back_points": 56,
+      "minimum_gap_metres": 0.0009558593977729394,
+      "maximum_gap_metres": 0.0009988125750306307,
+      "attached": true,
+      "mesh_contact_distance_metres": 0.0,
+      "housing_mesh_intersects_or_touches_skin": true
+    },
+    "ProbeCorePassage/Mk33ProbeFixture1_Housing": {
+      "mounting_back_triangles": 8,
+      "sampled_back_points": 56,
+      "minimum_gap_metres": 0.0009558640578583122,
+      "maximum_gap_metres": 0.000998821119816787,
+      "attached": true,
+      "mesh_contact_distance_metres": 0.0,
+      "housing_mesh_intersects_or_touches_skin": true
+    },
+    "ProbeCorePassage/Mk33ProbeFixture2_Housing": {
+      "mounting_back_triangles": 8,
+      "sampled_back_points": 56,
+      "minimum_gap_metres": 0.0009558637414720555,
+      "maximum_gap_metres": 0.0009988271613532555,
+      "attached": true,
+      "mesh_contact_distance_metres": 0.0,
+      "housing_mesh_intersects_or_touches_skin": true
+    },
+    "ProbeCorePassage/Mk33ProbeFixture0_Diffuser": {
+      "contact_with_housing_gap_metres": 0.000994019210240294
+    },
+    "ProbeCorePassage/Mk33ProbeFixture1_Diffuser": {
+      "contact_with_housing_gap_metres": 0.0009940202725200137
+    },
+    "ProbeCorePassage/Mk33ProbeFixture2_Diffuser": {
+      "contact_with_housing_gap_metres": 0.0009940039955460378
+    },
+    "NoseDockPassage/Mk33NoseFixture_Housing": {
+      "mounting_back_triangles": 4,
+      "sampled_back_points": 28,
+      "minimum_gap_metres": 0.0009951636582136206,
+      "maximum_gap_metres": 0.0009999871253967285,
+      "attached": true,
+      "mesh_contact_distance_metres": 0.0,
+      "housing_mesh_intersects_or_touches_skin": true
+    },
+    "NoseDockPassage/Mk33NoseFixture_Diffuser": {
+      "contact_with_housing_gap_metres": 0.0009951804921816672
+    }
+  },
+  "clearance": {
+    "cockpit_main": {
+      "body": {
+        "sample_count": 884,
+        "max_step_metres": 0.005,
+        "min_sampled_clearance_metres": 0.20687728115649012,
+        "conservative_swept_clearance_lower_bound_metres": 0.20187728115649012,
+        "worst_center": [
+          0.0,
+          -0.14158321630804083,
+          1.9751133861834649
+        ],
+        "clear": true,
+        "shape": "standing capsule radius .20 height .60"
+      },
+      "helmet": {
+        "sample_count": 884,
+        "max_step_metres": 0.005,
+        "min_sampled_clearance_metres": 0.2065066580369421,
+        "conservative_swept_clearance_lower_bound_metres": 0.2015066580369421,
+        "worst_center": [
+          0.0,
+          -0.14087271800679502,
+          1.9800610305775759
+        ],
+        "clear": true,
+        "shape": "standing capsule radius .225 height .60"
+      }
+    },
+    "cockpit_shaft": {
+      "body": {
+        "sample_count": 484,
+        "max_step_metres": 0.005,
+        "min_sampled_clearance_metres": 0.032999954223632944,
+        "conservative_swept_clearance_lower_bound_metres": 0.027999954223632943,
+        "worst_center": [
+          0.0,
+          1.49,
+          0.44513473684210525
+        ],
+        "clear": true,
+        "shape": "standing capsule radius .20 height .60"
+      },
+      "helmet": {
+        "sample_count": 484,
+        "max_step_metres": 0.005,
+        "min_sampled_clearance_metres": 0.03299995422363286,
+        "conservative_swept_clearance_lower_bound_metres": 0.02799995422363286,
+        "worst_center": [
+          0.0,
+          1.49,
+          0.44513473684210525
+        ],
+        "clear": true,
+        "shape": "standing capsule radius .225 height .60"
+      }
+    },
+    "krew_transfer": {
+      "body": {
+        "sample_count": 491,
+        "max_step_metres": 0.005,
+        "min_sampled_clearance_metres": 0.050000002243042074,
+        "conservative_swept_clearance_lower_bound_metres": 0.04500000224304208,
+        "worst_center": [
+          0.0,
+          1.055827,
+          0.0839419917142857
+        ],
+        "clear": true,
+        "shape": "standing capsule radius .20 height .60"
+      },
+      "helmet": {
+        "sample_count": 491,
+        "max_step_metres": 0.005,
+        "min_sampled_clearance_metres": 0.0500000022430421,
+        "conservative_swept_clearance_lower_bound_metres": 0.045000002243042105,
+        "worst_center": [
+          0.0,
+          1.055827,
+          0.0839419917142857
+        ],
+        "clear": true,
+        "shape": "standing capsule radius .225 height .60"
+      }
+    },
+    "probe_passage": {
+      "body": {
+        "sample_count": 594,
+        "max_step_metres": 0.005,
+        "min_sampled_clearance_metres": 0.18964907025136235,
+        "conservative_swept_clearance_lower_bound_metres": 0.18464907025136235,
+        "worst_center": [
+          -0.004987390617706576,
+          -0.7467284150337268,
+          -0.9081793554721758
+        ],
+        "clear": true,
+        "shape": "standing capsule radius .20 height .60"
+      },
+      "helmet": {
+        "sample_count": 594,
+        "max_step_metres": 0.005,
+        "min_sampled_clearance_metres": 0.1894991387245333,
+        "conservative_swept_clearance_lower_bound_metres": 0.1844991387245333,
+        "worst_center": [
+          -0.004987390617706576,
+          -0.7467284150337268,
+          -0.9081793554721758
+        ],
+        "clear": true,
+        "shape": "standing capsule radius .225 height .60"
+      }
+    },
+    "nose_passage": {
+      "body": {
+        "sample_count": 251,
+        "max_step_metres": 0.005,
+        "min_sampled_clearance_metres": 0.2354120222942646,
+        "conservative_swept_clearance_lower_bound_metres": 0.2304120222942646,
+        "worst_center": [
+          0.0,
+          0.0,
+          -0.24900000000000003
+        ],
+        "clear": true,
+        "shape": "standing capsule radius .20 height .60"
+      },
+      "helmet": {
+        "sample_count": 251,
+        "max_step_metres": 0.005,
+        "min_sampled_clearance_metres": 0.2295443502325095,
+        "conservative_swept_clearance_lower_bound_metres": 0.2245443502325095,
+        "worst_center": [
+          0.0,
+          0.0,
+          -0.24900000000000003
+        ],
+        "clear": true,
+        "shape": "standing capsule radius .225 height .60"
+      }
+    }
+  },
+  "ladder": {
+    "contact_tolerance_metres": 0.0021,
+    "contacts": {
+      "Mk33AccessRailLeft": [
+        "Mk33AccessMountLeft0",
+        "Mk33AccessMountLeft1",
+        "Mk33AccessMountLeft2",
+        "Mk33AccessRung0",
+        "Mk33AccessRung1",
+        "Mk33AccessRung2",
+        "Mk33AccessRung3",
+        "Mk33AccessRung4",
+        "Mk33AccessRung5",
+        "Mk33AccessRung6",
+        "Mk33AccessRung7"
+      ],
+      "Mk33AccessMountLeft0": [
+        "shell",
+        "Mk33AccessRailLeft",
+        "Mk33AccessRung0"
+      ],
+      "Mk33AccessMountLeft1": [
+        "shell",
+        "Mk33AccessRailLeft",
+        "Mk33AccessRung3"
+      ],
+      "Mk33AccessMountLeft2": [
+        "shell",
+        "Mk33AccessRailLeft"
+      ],
+      "Mk33AccessRailRight": [
+        "Mk33AccessMountRight0",
+        "Mk33AccessMountRight1",
+        "Mk33AccessMountRight2",
+        "Mk33AccessRung0",
+        "Mk33AccessRung1",
+        "Mk33AccessRung2",
+        "Mk33AccessRung3",
+        "Mk33AccessRung4",
+        "Mk33AccessRung5",
+        "Mk33AccessRung6",
+        "Mk33AccessRung7"
+      ],
+      "Mk33AccessMountRight0": [
+        "shell",
+        "Mk33AccessRailRight",
+        "Mk33AccessRung0"
+      ],
+      "Mk33AccessMountRight1": [
+        "shell",
+        "Mk33AccessRailRight",
+        "Mk33AccessRung3"
+      ],
+      "Mk33AccessMountRight2": [
+        "shell",
+        "Mk33AccessRailRight"
+      ],
+      "Mk33AccessRung0": [
+        "Mk33AccessRailLeft",
+        "Mk33AccessMountLeft0",
+        "Mk33AccessRailRight",
+        "Mk33AccessMountRight0"
+      ],
+      "Mk33AccessRung1": [
+        "Mk33AccessRailLeft",
+        "Mk33AccessRailRight"
+      ],
+      "Mk33AccessRung2": [
+        "Mk33AccessRailLeft",
+        "Mk33AccessRailRight"
+      ],
+      "Mk33AccessRung3": [
+        "Mk33AccessRailLeft",
+        "Mk33AccessMountLeft1",
+        "Mk33AccessRailRight",
+        "Mk33AccessMountRight1"
+      ],
+      "Mk33AccessRung4": [
+        "Mk33AccessRailLeft",
+        "Mk33AccessRailRight"
+      ],
+      "Mk33AccessRung5": [
+        "Mk33AccessRailLeft",
+        "Mk33AccessRailRight"
+      ],
+      "Mk33AccessRung6": [
+        "Mk33AccessRailLeft",
+        "Mk33AccessRailRight"
+      ],
+      "Mk33AccessRung7": [
+        "Mk33AccessRailLeft",
+        "Mk33AccessRailRight"
+      ],
+      "shell": [
+        "Mk33AccessMountLeft0",
+        "Mk33AccessMountLeft1",
+        "Mk33AccessMountLeft2",
+        "Mk33AccessMountRight0",
+        "Mk33AccessMountRight1",
+        "Mk33AccessMountRight2"
+      ]
+    },
+    "all_visible_pieces_reach_shell_through_real_triangle_contacts": true,
+    "each_rung_contacts_both_side_rails": {
+      "Mk33AccessRung0": [
+        "Mk33AccessRailLeft",
+        "Mk33AccessRailRight"
+      ],
+      "Mk33AccessRung1": [
+        "Mk33AccessRailLeft",
+        "Mk33AccessRailRight"
+      ],
+      "Mk33AccessRung2": [
+        "Mk33AccessRailLeft",
+        "Mk33AccessRailRight"
+      ],
+      "Mk33AccessRung3": [
+        "Mk33AccessRailLeft",
+        "Mk33AccessRailRight"
+      ],
+      "Mk33AccessRung4": [
+        "Mk33AccessRailLeft",
+        "Mk33AccessRailRight"
+      ],
+      "Mk33AccessRung5": [
+        "Mk33AccessRailLeft",
+        "Mk33AccessRailRight"
+      ],
+      "Mk33AccessRung6": [
+        "Mk33AccessRailLeft",
+        "Mk33AccessRailRight"
+      ],
+      "Mk33AccessRung7": [
+        "Mk33AccessRailLeft",
+        "Mk33AccessRailRight"
+      ]
+    }
+  }
+}

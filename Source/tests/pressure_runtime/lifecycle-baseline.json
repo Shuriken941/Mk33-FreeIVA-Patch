@@ -1,0 +1,28 @@
+{
+  "version": "0.3.1",
+  "dependency_double_execution": true,
+  "in_game_tested": false,
+  "trigger": "OnAwake before OnLoad, then successful OnLoad and OnAwake",
+  "observed": [
+    {
+      "module": "Mk33FreeIvaPressureHatch",
+      "initial_allows_unbuckling": true,
+      "after_awake_before_load": false,
+      "after_successful_load_and_awake": false
+    },
+    {
+      "module": "Mk33FreeIvaHatch",
+      "initial_allows_unbuckling": true,
+      "after_awake_before_load": false,
+      "after_successful_load_and_awake": false
+    },
+    {
+      "module": "Mk33FreeIvaAuthoredShell",
+      "initial_allows_unbuckling": true,
+      "after_awake_before_load": false,
+      "after_successful_load_and_awake": false
+    }
+  ],
+  "pressure_source_sha256": "6ca3a695b4a0d5580c96bf6bcb5a2172b2d4a9b24c40c63065f0bdf6ecf9dc8a",
+  "geometry_source_sha256": "cb35236a14d89f813c5ac9a9e48a0f166113d227901f7ce07bc1c63f930b33bf"
+}

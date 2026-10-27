@@ -1,0 +1,32 @@
+{
+  "in_game_tested": false,
+  "distance_check_only": true,
+  "method": "Analytic 2m separation and genuine through-triangle intersections for triangles down to .1 micrometre edges; also degenerate point triangle.",
+  "cases": [
+    {
+      "edge_metres": 1e-07,
+      "known_separation_metres": 2.0,
+      "calculated_separation_metres": 2.0,
+      "actual_ray_intersection_detected": true
+    },
+    {
+      "edge_metres": 1e-05,
+      "known_separation_metres": 2.0,
+      "calculated_separation_metres": 2.0,
+      "actual_ray_intersection_detected": true
+    },
+    {
+      "edge_metres": 0.1,
+      "known_separation_metres": 2.0,
+      "calculated_separation_metres": 2.0,
+      "actual_ray_intersection_detected": true
+    },
+    {
+      "edge_metres": 1.0,
+      "known_separation_metres": 2.0,
+      "calculated_separation_metres": 2.0,
+      "actual_ray_intersection_detected": true
+    }
+  ],
+  "degenerate_point_triangle_handles_without_false_plane_hit": true
+}
